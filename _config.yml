@@ -6,10 +6,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-polyglot
-permalink: /news/:year-:month/:title/
+permalink: /:title/
 
 sass:
-  style: compressed
+  # style: compressed
+  sourcemap: true
+
+theme: false
 
 exclude:
   - .gitignore
