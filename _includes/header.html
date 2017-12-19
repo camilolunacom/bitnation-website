@@ -1,0 +1,14 @@
+<a href=""><img class="top-logo" src=""></a>
+<nav class="main-menu">
+    {% for item in site.data.navigation.main %}
+    <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+    {% endfor %}
+    <span class="dropdown">
+        <button>{{ site.language_names[site.active_lang] }}</button>
+        <div class="dropdown-content">
+            {% for language in site.languages %}{% if language != site.active_lang %}
+            <a href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
+            {% endif %}{% endfor %}
+        </div>
+    </span>
+</nav>

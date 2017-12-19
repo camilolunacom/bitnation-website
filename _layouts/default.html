@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{site.active_lang}}">
+<html lang="{{ site.active_lang }}">
 <head>
 {% include head.html %}
 {% if jekyll.environment == 'production' and site.google_analytics_id %}
@@ -7,18 +7,14 @@
 {% endif %}
 </head>
 <body>
-<div class="main-container">
-
+<header>
 {% include header.html %}
-
-<div class="main-content">
+</header>
+<main{% if site.active_lang == "ar" %} dir="rtl"{% endif %}>
 {{ content }}
-</div>
-
+</main>
+<footer>
 {% include footer.html %}
-
-</div>
-
+</footer>
 </body>
-
 </html>

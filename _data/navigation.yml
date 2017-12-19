@@ -1,0 +1,13 @@
+main:
+- title: Home
+  url: /
+- title: Documents
+  url: /docs/
+
+footer:
+- title: info@bitnation.co
+  url: mailto:info@bitnation.co
+- title: Terms of Use
+  url: /terms-of-use/
+- title: Privacy Policy
+  url: /privacy-policy/

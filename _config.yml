@@ -18,10 +18,27 @@ exclude:
   - .gitignore
   - CNAME
   - readme.md
+  - Gemfile
+  - Gemfile.lock
 
 google_analytics_id: UA-106469149-1
 
-languages: ["en", "sv", "de", "fr"]
+languages: ["ar", "ca", "de", "en", "es", "fil", "fr", "it", "ja", "pt", "ru", "vi", "zh"]
 default_lang: "en"
 exclude_from_localization: ["js", "img", "css"]
 parallel_localization: true
+
+language_names:
+  ar: <span dir="rtl">العَرَبِيَّة</span>
+  ca: Catalan
+  de: Deutsch
+  en: English
+  es: Español
+  fil: Filipino
+  fr: Français
+  it: Italiano
+  ja: 日本語
+  pt: Português
+  ru: Русский
+  vi: Tiếng Việt
+  zh: 國語

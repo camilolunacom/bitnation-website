@@ -1,0 +1,9 @@
+<a href=""><img class="footer-logo" src=""></a>
+<nav class="footer-menu">
+    {% for item in site.data.navigation.footer %}
+    <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+    {% endfor %}
+</nav>
+<div class="footer-legal">
+    Copyright &copy; 2017 BITNATION. All rights reserved.
+</div>
