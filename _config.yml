@@ -12,8 +12,6 @@ sass:
   # style: compressed
   sourcemap: true
 
-theme: false
-
 exclude:
   - .gitignore
   - CNAME
