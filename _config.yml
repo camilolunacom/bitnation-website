@@ -1,12 +1,18 @@
 title: Bitnation Pangea
 description: Your Blockchain Jurisdiction
 author: Bitnation
+
+url: https://tse.bitnation.co
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-polyglot
+  
 permalink: /:title/
+
+destination: docs
 
 sass:
   # style: compressed
@@ -23,7 +29,7 @@ google_analytics_id: UA-106469149-1
 
 languages: ["ar", "ca", "de", "en", "es", "fil", "fr", "it", "ja", "pt", "ru", "vi", "zh"]
 default_lang: "en"
-exclude_from_localization: ["js", "img", "css"]
+exclude_from_localization: ["assets", "css", "img", "js"]
 parallel_localization: true
 
 language_names:
