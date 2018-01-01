@@ -5,7 +5,6 @@ author: Bitnation
 url: https://tse.bitnation.co
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-polyglot
@@ -31,7 +30,7 @@ google_analytics_id: UA-106469149-1
 
 languages: ["ar", "ca", "de", "en", "es", "fil", "fr", "it", "ja", "pt", "ru", "vi", "zh"]
 default_lang: "en"
-exclude_from_localization: ["css", "img", "js", "robots.txt", "feed.xml", "sitemap.xml", "favicon.ico"]
+exclude_from_localization: ["css", "img", "js", "robots.txt", "sitemap.xml", "favicon.ico"]
 parallel_localization: true
 
 language_names:
