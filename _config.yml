@@ -13,6 +13,7 @@ plugins:
 permalink: /:title/
 
 destination: docs
+theme: []
 
 sass:
   # style: compressed
@@ -24,12 +25,13 @@ exclude:
   - readme.md
   - Gemfile
   - Gemfile.lock
+  - docs
 
 google_analytics_id: UA-106469149-1
 
 languages: ["ar", "ca", "de", "en", "es", "fil", "fr", "it", "ja", "pt", "ru", "vi", "zh"]
 default_lang: "en"
-exclude_from_localization: ["assets", "css", "img", "js"]
+exclude_from_localization: ["css", "img", "js", "robots.txt", "feed.xml", "sitemap.xml", "favicon.ico"]
 parallel_localization: true
 
 language_names:

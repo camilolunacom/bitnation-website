@@ -1,13 +1,111 @@
 core:
 
-- name: 
-  position: 
-  linkedin: 
-  github: 
-  twitter: 
+- name: Susanne Tarkowski Tempelhof
+  role: CEO
+  linkedin: susannetarkowski
+  github: xsttx
+
+- name: James Fennell Tempelhof
+  role: COO
+  linkedin: james-fennell
+
+- name: Dr. John Matthews
+  role: CFO
+  linkedin: johnmathews1
+
+- name: Eliott Teissonniere
+  role: Software Architect
+  github: developpsoft
+  twitter: DeveloppSoft
+
+- name: Erik Vollstädt
+  role: Lead Ambassador
+  linkedin: erikvollstaedt
+
+- name: Florian Lenz
+  role: Backend Developer
+  github: florianlenz
+
+- name: Daniel França
+  role: React Native Developer
+  linkedin: danielcfranca
+  github: danielfranca
+  twitter: danielfranca
+
+- name: Kent Dahlgren
+  role: AI Developer
+  linkedin: kent-dahlgren-gsec-742a073
+  twitter: kent_dahlgren
+
+- name: Mawo
+  role: Infrastructure & Security
+
+- name: Johan Nygren
+  role: Resident Genius
+  linkedin: resilience_me
+
+- name: Sonja Prstec
+  role: Legal Advisor
+  linkedin: sonja-prstec-89a0b324
+
+- name: Kenneth Lillieholm
+  role: Documentation
+
+- name: Joffy Mills
+  role: Marketing & Communications
+
+- name: Alma Sommer
+  role: Social Media
+  linkedin: rayneberry
+  twitter: EarthPermit
+
+- name: Björn Paulsson
+  role: Project Coordinator
+  linkedin: bjornpaulsson
+
+- name: Adrian Pollio
+  role: Graphic Designer
+  linkedin: adrianpollio
+  twitter: adrianpollio
+
+- name: Alberto Estarrona
+  role: Senior iOS / Android Developer
+  linkedin: alberto-r-estarrona
+  twitter: estarrona
+
+- name: William Huang
+  role: Solidity Developer
+  linkedin: william-h-902213139
+  github: william2958
+
+- name: Camilo Luna
+  role: Web Developer
+  linkedin: camiloluna
+  github: camilolunacom
+  twitter: camilolunacom
 
 advisors:
 
-- name:
-  linkedin:
-  twitter:
+- name: Rick Falkvinge
+  linkedin: rickfalkvinge
+  twitter: Falkvinge
+
+- name: David Orban
+  linkedin: davidorban
+  twitter: davidorban
+
+- name: Vinay Gupta
+  linkedin: vinay-gupta-0072/
+  twitter: leashless
+
+- name: Todd Huffman
+  linkedin: oddmachine/
+  twitter: odd
+
+- name: Kilian Kleinschmidt
+  linkedin: kiliankleinschmidt
+  twitter: KilianK
+
+- name: Vít Jedlička
+  linkedin: vit-jedlicka-9115aa2
+  twitter: vit_jedlicka

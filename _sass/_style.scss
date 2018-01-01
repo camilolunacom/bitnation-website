@@ -1,6 +1,86 @@
 html {
     box-sizing: border-box;
-  }
+    background: #000;
+    color: #fff;
+}
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+
+header {
+    background: #999;
+    width: 100%;
+}
+
+.header-container, .grid, .flex {
+    max-width: 930px;
+    margin: auto;
+}
+
+.header-container {
+    min-height: 65px;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+
+.top-logo {
+    display: inline-block;
+    height: 100%;
+    img {
+        height: 45px;
+        z-index: 2;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        float: left;
+    }
+}
+
+.main-menu {
+    display: none;
+    padding-top: 45px;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item, .submenu-item {
+    display: block;
+    text-align: center;
+    height: 40px;
+    margin: auto;
+}
+
+.menu-item {
+    font-weight: bold;
+}
+
+.top-nav-icon {
+    cursor: pointer;
+    font-size: 26px;
+    display: block;
+    position: absolute;
+    top: 18px;
+    right:20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.grid-cell, .flex {
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 930px) {
+
 }

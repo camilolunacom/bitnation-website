@@ -1,14 +1,17 @@
-<a href="/"><img class="top-logo" src=""></a>
-<nav class="main-menu">
-    {% for item in site.data.navigation.main %}
-    <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
-    {% endfor %}
-    <span class="dropdown">
-        <button>{{ site.language_names[site.active_lang] }}</button>
-        <div class="dropdown-content">
-            {% for language in site.languages %}{% if language != site.active_lang %}
-            <a href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
-            {% endif %}{% endfor %}
-        </div>
-    </span>
-</nav>
+<div class="header-container">
+    <a class="top-logo" href="/"><img src="/img/bitnation-logo-h.png"></a>
+    <nav id="topnav" class="main-menu">
+        {% for item in site.data.navigation.main %}
+        <a class="menu-item" href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+        {% endfor %}
+        <span class="dropdown">
+            <a class="menu-item" href="javascript:void(0);">{{ site.language_names[site.active_lang] }}</a>
+            <div class="dropdown-content">
+                {% for language in site.languages %}{% if language != site.active_lang %}
+                <a class="submenu-item" href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
+                {% endif %}{% endfor %}
+            </div>
+        </span>
+    </nav>
+    <a href="javascript:void(0);" class="top-nav-icon" onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></a>
+</div>
