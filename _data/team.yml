@@ -1,5 +1,3 @@
-core:
-
 - name: Susanne Tarkowski Tempelhof
   role: CEO
   linkedin: susannetarkowski
@@ -84,28 +82,32 @@ core:
   github: camilolunacom
   twitter: camilolunacom
 
-advisors:
-
 - name: Rick Falkvinge
+  role: Advisor
   linkedin: rickfalkvinge
   twitter: Falkvinge
 
 - name: David Orban
+  role: Advisor
   linkedin: davidorban
   twitter: davidorban
 
 - name: Vinay Gupta
+  role: Advisor
   linkedin: vinay-gupta-0072/
   twitter: leashless
 
 - name: Todd Huffman
+  role: Advisor
   linkedin: oddmachine/
   twitter: odd
 
 - name: Kilian Kleinschmidt
+  role: Advisor
   linkedin: kiliankleinschmidt
   twitter: KilianK
 
 - name: Vít Jedlička
+  role: Advisor
   linkedin: vit-jedlicka-9115aa2
   twitter: vit_jedlicka

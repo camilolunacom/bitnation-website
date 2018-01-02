@@ -1,15 +1,108 @@
+$white:         #ffffff;
+$black:         #020307;
+$light-black:   #1c1819;
+$blue:          #02afd9;
+$grey:          #f1f1f1;
+$dark-blue:     #000022;
+$alt-blue1:     #012c56;
+$alt-blue:      #3e6181;
+
+$source-code:   "SourceCodePro", courier, monospace;
+$helvetica:     "HelveticaNeue", verdana, sans-serif;
+
 html {
     box-sizing: border-box;
-    background: #000;
-    color: #fff;
+    background: $black;
+    color: $white;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+// Fonts
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueMedium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueLight.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('../fonts/SourceCodePro-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('../fonts/SourceCodePro-Bold.ttf');
+    font-weight: bold;
+}
+
+// Elements
+
+body {
+    font-family: $helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h1, h2 {
+    font-family: $source-code;
+    color: $blue;
+}
+
+h3, h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+
+p {
+    font-weight: 300;
+    line-height: 2;
+}
+
+a, button {
+    text-decoration: none;
+    color: $blue;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+// Containers
 
 header {
-    background: #999;
+    background:$light-black;
     width: 100%;
 }
 
@@ -18,68 +111,176 @@ header {
     margin: auto;
 }
 
+.grid-cell, .flex {
+    padding: 0 20px;
+    text-align: center;
+}
 .header-container {
     min-height: 65px;
     margin: 0 20px;
     padding: 10px 0;
 }
 
-.top-logo {
-    display: inline-block;
-    height: 100%;
-    img {
-        height: 45px;
-        z-index: 2;
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        float: left;
-    }
+section {
+    padding: 50px 0;
 }
 
-.main-menu {
-    display: none;
-    padding-top: 45px;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.flex .grid-cell {
+    padding: 15px;
+}
+
+// General
 
 .visible {
-    display: block;
+    display: block !important;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
-.main-menu a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-item, .submenu-item {
-    display: block;
-    text-align: center;
-    height: 40px;
-    margin: auto;
-}
-
-.menu-item {
+.cta {
+    text-transform: uppercase;
     font-weight: bold;
+    display: inline-block;
+    margin: 10px auto;
+    width: 100%;
+    a, button {
+        background: $white;
+        border-radius: 2px;
+        min-width: 280px;
+        width: 80%;
+        min-height: 48px;
+        padding: 12px 30px;
+        margin: auto;
+        display: block;
+    }
 }
 
-.top-nav-icon {
-    cursor: pointer;
-    font-size: 26px;
-    display: block;
-    position: absolute;
-    top: 18px;
-    right:20px;
-    color: #fff;
-    z-index: 2;
+.cta-hl {
+    @extend .cta;
+    a, button {
+        background: $blue;
+        color: $white;
+    }
 }
 
-.grid-cell, .flex {
-    padding: 0 20px;
+.icon-l {
+    font-size: 3em;
 }
+
+.vid-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 75%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bigger {
+    font-size: 1.25em;
+}
+
+// Sections
+
+header {
+    .top-logo {
+        display: inline-block;
+        height: 100%;
+        img {
+            height: 45px;
+            z-index: 2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            float: left;
+        }
+    }
+    
+    .main-menu {
+        display: none;
+        padding-top: 45px;
+    }
+    
+    
+    .main-menu a {
+        color: $white;
+        text-decoration: none;
+    }
+    
+    .menu-item, .submenu-item {
+        display: block;
+        text-align: center;
+        height: 40px;
+        margin: auto;
+        color: $white;
+        line-height: 40px;
+    }
+    
+    .menu-item {
+        font-weight: bold;
+    }
+    
+    .top-nav-icon {
+        font-size: 26px;
+        display: block;
+        position: absolute;
+        top: 18px;
+        right:20px;
+        color: $white;
+        z-index: 2;
+    }
+}
+
+#intro {
+    #logo-pangea {
+        height: 180px;
+    }
+}
+
+#install {
+    background: $grey;
+}
+
+#video {
+    background: $blue;
+    h2 {
+        color: $white;
+    }
+}
+
+#pat {
+    .logo {
+        width: 80px;
+    }
+}
+
+#pangea {
+    .flex .grid-cell {
+        width: 150px;
+    }
+    .number {
+        font-size: 2em;
+    }    
+}
+
+#social {
+    background: $dark-blue;
+}
+
+// Header
 
 @media screen and (min-width: 930px) {
 

@@ -4,18 +4,24 @@ layout: default
 <section id="intro">
     <div class="grid">
         <div class="grid-cell">
-            <img src="" alt="">
+            <img id="logo-pangea" src="{{ "/img/bitnation-logo-enter-pangea.svg" | relative_url }}" alt="Bitnation Logo: Enter Pangea">
             <h1>{{ site.data["index"][1] }}</h1>
         </div>
-        <div class="grid">
-            <div class="grid-cell 1of3">
-                <a class="btn" href="#install">{{ site.data["index"][2] }}</a>
+    </div>
+    <div class="grid">
+        <div class="grid-cell 1of3">
+            <div class="cta">
+                <a href="#install">{{ site.data["index"][2] }}</a>
             </div>
-            <div class="grid-cell 1of3">
-                <a class="btn" href="#pat">{{ site.data["index"][3] }}</a>
+        </div>
+        <div class="grid-cell 1of3">
+            <div class="cta">
+                <a href="#pat">{{ site.data["index"][3] }}</a>
             </div>
-            <div class="grid-cell 1of3">
-                <a class="btn" href="#social">{{ site.data["index"][4] }}</a>
+        </div>
+        <div class="grid-cell 1of3">
+            <div class="cta">
+                <a href="#social">{{ site.data["index"][4] }}</a>
             </div>
         </div>
     </div>
@@ -42,35 +48,37 @@ layout: default
             </div>
         </div>
         <div class="grid">
-            <div class="grid-cell">    
-                <a class="btn" href="">{{ site.data["index"][12] }}</a>
+            <div class="grid-cell">
+                <div class="cta">
+                    <a href="https://github.com/Bit-Nation/Pangea-Arbitration-Token-PAT/blob/master/BITNATION%20Pangea%20Whitepaper%202017.pdf">{{ site.data["index"][12] }}</a>
+                </div>
             </div>
         </div>
-        <div class="grid">
+        <div class="grid flex">
             <div class="grid-cell 1of5">
-                <i class="fal fa-user"></i>
-                <span class="bigger">{{ site.data["index"][13] }}</span>
-                <span>{{ site.data["index"][14] }}</span>
+                <div class="icon-l"><i class="fal fa-user"></i></div>
+                <div class="number">{{ site.data["index"][13] }}</div>
+                <div>{{ site.data["index"][14] }}</div>
             </div>
             <div class="grid-cell 1of5">
-                <i class="fal fa-users"></i>
-                <span class="bigger">{{ site.data["index"][15] }}</span>
-                <span>{{ site.data["index"][16] }}</span>
+                <div class="icon-l"><i class="fal fa-users"></i></div>
+                <div class="number">{{ site.data["index"][15] }}</div>
+                <div>{{ site.data["index"][16] }}</div>
             </div>
             <div class="grid-cell 1of5">
-                <i class="fal fa-code"></i>
-                <span class="bigger">{{ site.data["index"][17] }}</span>
-                <span>{{ site.data["index"][18] }}</span>
+                <div class="icon-l"><i class="fal fa-code"></i></div>
+                <div class="number">{{ site.data["index"][17] }}</div>
+                <div>{{ site.data["index"][18] }}</div>
             </div>
             <div class="grid-cell 1of5">
-                <i class="fal fa-globe"></i>
-                <span class="bigger">{{ site.data["index"][19] }}</span>
-                <span>{{ site.data["index"][20] }}</span>
+                <div class="icon-l"><i class="fal fa-globe"></i></div>
+                <div class="number">{{ site.data["index"][19] }}</div>
+                <div>{{ site.data["index"][20] }}</div>
             </div>
             <div class="grid-cell 1of5">
-                <i class="fal fa-copy"></i>
-                <span class="bigger">{{ site.data["index"][21] }}</span>
-                <span>{{ site.data["index"][22] }}</span>
+                <div class="icon-l"><i class="fal fa-copy"></i></div>
+                <div class="number">{{ site.data["index"][21] }}</div>
+                <div>{{ site.data["index"][22] }}</div>
             </div>
         </div>
     </div>
@@ -81,7 +89,9 @@ layout: default
         <div class="grid-cell">
             <h2>{{ site.data["index"][23] }}</h2>
             <img src="" alt="">
-            <a class="btn" href="">{{ site.data["index"][24] }}</a>
+            <div class="cta">
+                <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile">{{ site.data["index"][24] }}</a>
+            </div>
         </div>
     </div>
 </section>
@@ -89,8 +99,10 @@ layout: default
 <section id="video">
     <div class="grid">
         <div class="grid-cell">
-            <h2>BITNATION:<br>{{ site.data["index"][25] }}</h2>
-            <iframe src="https://www.youtube.com/embed/{{ site.data["index"][26] }}" allowfullscreen="" kwframeid="1" width="100%" height="200" frameborder="0"></iframe>
+            <h2>Bitnation:<br>{{ site.data["index"][25] }}</h2>
+            <div class="vid-container">
+                <iframe src="https://www.youtube.com/embed/{{ site.data["index"][26] }}" allowfullscreen="" kwframeid="1" frameborder="0"></iframe>
+            </div>
             <p>{{ site.data["index"][27] }}</p>
         </div>
     </div>
@@ -104,7 +116,7 @@ layout: default
     </div>
     <div class="grid">
         <div class="grid-cell">
-            <img src="" alt="">
+            <img class="logo" src="/img/bitnation-logo-round.svg" alt="Bitnation Logo">
         </div>
         <div class="grid-cell">
             <p>{{ site.data["index"][29] }}</p>
@@ -112,18 +124,24 @@ layout: default
     </div>
     <div class="grid">
         <div class="grid-cell 1of3">
-            <a class="btn btn-hl" href="#install">{{ site.data["index"][30] }}</a>
+            <div class="cta-hl">
+                <button onclick="show_pat_popup()">{{ site.data["index"][30] }}</button>
+            </div>
         </div>
         <div class="grid-cell 1of3">
-            <a class="btn" href="#pat">{{ site.data["index"][31] }}</a>
+            <div class="cta">
+                <a href="https://github.com/Bit-Nation/Pangea-Arbitration-Token-PAT/blob/master/BITNATION%20Pangea%20Whitepaper%202017.pdf">{{ site.data["index"][31] }}</a>
+            </div>
         </div>
         <div class="grid-cell 1of3">
-            <a class="btn" href="#social">{{ site.data["index"][32] }}</a>
+            <div class="cta">
+                <a href="{{ "/documents/" | relative_url }}">{{ site.data["index"][32] }}</a>
+            </div>
         </div>
     </div>
     <div class="grid">
         <div class="grid-cell">
-            <p>{{ site.data["index"][33] }}<br><a href="">{{ site.data["index"][34] }}</a></p>
+            <p class="bigger">{{ site.data["index"][33] }}<br><a href="{{ "/purchase-agreement/" | relative_url }}">{{ site.data["index"][34] }}</a></p>
         </div>
     </div>
     <div class="grid">
