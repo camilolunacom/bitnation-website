@@ -270,10 +270,34 @@ header {
 #pangea {
     .flex .grid-cell {
         width: 150px;
+        @media screen and (max-width: 789px) {
+            min-width: 33.3333%;
+        }
     }
     .number {
         font-size: 2em;
     }    
+}
+
+#partners {
+    .flex {
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width: 598px) {
+            flex-direction: row;
+        }
+    }
+    .flex .grid-cell {
+        @media screen and (max-width: 818px) {
+            min-width: 50%;
+        }
+    }
+    #abdk {
+        max-height: 70px;
+    }
+    #bitcoin-suisse, #netowrk-society-networks {
+        max-height: 60px;
+    }
 }
 
 #social {

@@ -13,7 +13,6 @@ plugins:
   
 permalink: /:title/
 
-destination: docs
 theme: []
 
 sass:
