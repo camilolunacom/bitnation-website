@@ -1,6 +1,6 @@
 $white:         #ffffff;
 $black:         #020307;
-$light-black:   #1c1819;
+$light-black:   rgba(0, 0, 0, 0.9);
 $blue:          #02afd9;
 $grey:          #f1f1f1;
 $dark-blue:     #000022;
@@ -120,6 +120,10 @@ input[type=submit] {
 
 header {
     background:$light-black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -282,11 +286,9 @@ header {
 }
 
 #intro {
+    padding-top: 100px;
     #logo-pangea {
         height: 180px;
-    }
-    .flex {
-
     }
 }
 
@@ -388,10 +390,4 @@ header {
     .join {
         
     }
-}
-
-// Header
-
-@media screen and (min-width: 930px) {
-
 }
