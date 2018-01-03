@@ -1,9 +1,17 @@
-<a href=""><img class="footer-logo" src=""></a>
-<nav class="footer-menu">
-    {% for item in site.data.navigation.footer %}
-    <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
-    {% endfor %}
-</nav>
-<div class="footer-legal">
-    Copyright &copy; 2017 BITNATION. All rights reserved.
+<div class="grid">
+    <div class="grid-cell">
+        <a class="footer-logo" href="{{ site.url }}/{{ site.baseurl }}">
+            <img src="{{ "/img/bitnation-logo-h.png" | relative_url }}">
+        </a>
+    </div>
+    <div class="grid-cell footer-text">
+        <nav class="footer-menu">
+            {% for item in site.data.navigation.footer %}
+            <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+        <div class="footer-legal">
+            Copyright &copy; 2017 BITNATION. All rights reserved.
+        </div>
+    </div>
 </div>

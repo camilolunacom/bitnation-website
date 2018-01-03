@@ -142,6 +142,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    vertical-align: middle;
     padding: 0 20px;
     text-align: center;
     @media screen and (min-width: 910px) {
@@ -389,5 +390,39 @@ header {
     }
     .join {
         
+    }
+}
+
+footer {
+    background: $blue;
+    font-size: 0.8em;
+    padding: 15px 0;
+    a {
+        color: $white;
+        font-weight: bold;
+    }
+    .grid {
+        @media screen and (min-width: 597px) {
+            justify-content: space-between;
+        }
+    }
+    .grid-cell {
+        align-self: center;
+    }
+    .footer-logo img {
+        width: 200px;
+        vertical-align: middle;
+    }
+    .footer-text {
+        .footer-menu > a::after {
+            content: " | ";
+        }
+        .footer-menu > a:last-child::after {
+            content: none;
+        }
+        .footer-legal {
+            font-weight: 300;
+            margin-top: 15px;
+        }
     }
 }
