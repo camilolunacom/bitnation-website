@@ -4,8 +4,6 @@ author: Bitnation
 
 url: https://camilolunacom.github.io
 
-baseurl: bitnation-website
-
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

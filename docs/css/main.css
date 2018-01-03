@@ -164,11 +164,11 @@ button { background: none; border: none; font-size: 1em; cursor: pointer; }
 
 header { background: #1c1819; width: 100%; }
 
-.header-container, .grid, .flex { max-width: 930px; margin: auto; }
+.header-container, .grid, .flex { max-width: 930px; margin: 0 auto; }
 
 .grid-cell, .flex { padding: 0 20px; text-align: center; }
 
-.header-container { min-height: 65px; margin: 0 20px; padding: 10px 0; }
+.header-container { min-height: 65px; padding: 10px 0; }
 
 section { padding: 50px 0; }
 
@@ -209,8 +209,8 @@ header .top-nav-icon { font-size: 26px; display: block; position: absolute; top:
 
 #pat .logo { width: 80px; }
 
-#pangea .flex .grid-cell { width: 150px; }
-@media screen and (max-width: 789px) { #pangea .flex .grid-cell { min-width: 33.3333%; } }
+@media screen and (max-width: 789px) { #pangea .flex { justify-content: center; }
+  #pangea .flex .grid-cell { width: 150px; min-width: 33.3333%; } }
 #pangea .number { font-size: 2em; }
 
 #partners .flex { align-items: center; flex-direction: column; }
