@@ -6,18 +6,22 @@
         <button onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></button>
     </div>
     <div id="topnav" class="main-menu grid-cell">
-        <nav>
+        <nav class="grid main-nav">
             {% for item in site.data.navigation.main %}
-            <a class="menu-item" href="{{ site.baseurl }}/{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+            <div class="grid-cell">
+                <a class="menu-item" href="{{ site.baseurl }}/{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+            </div>
             {% endfor %}
-            <span class="dropdown">
-                <button id ="active-language" class="menu-item">{{ site.language_names[site.active_lang] }}</button>
-                <div id="available-languages" class="dropdown-content">
-                    {% for language in site.languages %}{% if language != site.active_lang %}
-                    <a class="submenu-item" href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
-                    {% endif %}{% endfor %}
-                </div>
-            </span>
+            <div class="grid-cell">
+                <span class="dropdown">
+                    <button id ="active-language" class="menu-item">{{ site.language_names[site.active_lang] }}</button>
+                    <div id="available-languages" class="dropdown-content">
+                        {% for language in site.languages %}{% if language != site.active_lang %}
+                        <a class="submenu-item" href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
+                        {% endif %}{% endfor %}
+                    </div>
+                </span>
+            </div>
         </nav>
     </div>
 </div>

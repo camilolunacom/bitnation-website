@@ -167,7 +167,7 @@ section {
 .btn-3 {
     justify-content: center;
     @media screen and (min-width: 930px) {
-        justify-content: space-around
+        justify-content: space-around;
     }
 }
 
@@ -243,9 +243,15 @@ header {
     .grid {
         justify-content: space-between
     }
-    .top-logo img {
-            width: 120px;
-            z-index: 2;
+    .top-logo {
+        align-self: center;
+        a, img {
+            vertical-align: middle;
+        }
+        img {
+                width: 120px;
+                z-index: 2;
+        }
     }
     .top-nav-icon button {
         font-size: 26px;
@@ -259,6 +265,14 @@ header {
         a {
             color: $white;
             text-decoration: none;
+        }
+    }
+    .main-nav {
+        flex-direction: column;
+        @media screen and (max-width: 929px) {
+            .grid-cell {
+                padding: 0;
+            }
         }
     }
     .menu-item, .submenu-item {
@@ -277,14 +291,34 @@ header {
         display: none;
     }
     @media screen and (min-width: 930px){
+        .top-nav-icon {
+            display: none;
+        }
+        .grid .main-menu {
+            display: block;
+            width: auto;
+            padding: 0;
+        }
+        .main-nav {
+            flex-direction: row;
+        }
         .dropdown:hover .dropdown-content {
             display: block;
+            position: absolute;
+            background: $light-black;
+            transform: translateX(-25%);
+        }
+        .submenu-item {
+            padding: 0 30px;
         }
     }
 }
 
 #intro {
     padding-top: 100px;
+    @media screen and (min-width: 930px){
+        padding-top: 150px;
+    }
     #logo-pangea {
         height: 180px;
     }

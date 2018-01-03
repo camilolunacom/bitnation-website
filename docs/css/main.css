@@ -201,16 +201,25 @@ section { padding: 50px 0; }
 .bigger { font-size: 1.25em; }
 
 header .grid { justify-content: space-between; }
+header .top-logo { align-self: center; }
+header .top-logo a, header .top-logo img { vertical-align: middle; }
 header .top-logo img { width: 120px; z-index: 2; }
 header .top-nav-icon button { font-size: 26px; display: block; color: #ffffff; z-index: 2; }
 header .main-menu { display: none; width: 100%; }
 header .main-menu a { color: #ffffff; text-decoration: none; }
+header .main-nav { flex-direction: column; }
+@media screen and (max-width: 929px) { header .main-nav .grid-cell { padding: 0; } }
 header .menu-item, header .submenu-item { display: block; text-align: center; height: 40px; margin: auto; color: #ffffff; line-height: 40px; }
 header .menu-item { font-weight: bold; width: 100%; }
 header .dropdown-content { display: none; }
-@media screen and (min-width: 930px) { header .dropdown:hover .dropdown-content { display: block; } }
+@media screen and (min-width: 930px) { header .top-nav-icon { display: none; }
+  header .grid .main-menu { display: block; width: auto; padding: 0; }
+  header .main-nav { flex-direction: row; }
+  header .dropdown:hover .dropdown-content { display: block; position: absolute; background: rgba(0, 0, 0, 0.9); transform: translateX(-25%); }
+  header .submenu-item { padding: 0 30px; } }
 
 #intro { padding-top: 100px; }
+@media screen and (min-width: 930px) { #intro { padding-top: 150px; } }
 #intro #logo-pangea { height: 180px; }
 
 #pangea .stats { flex-direction: column; justify-content: center; }
