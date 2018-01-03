@@ -145,9 +145,12 @@ section {
     vertical-align: middle;
     padding: 0 20px;
     text-align: center;
-    @media screen and (min-width: 910px) {
+    @media screen and (min-width: 930px) {
         .three-quarters {
             width: 75%;
+        }
+        .one-third {
+            width: 33.3333%;
         }
         .one-quarter {
             width: 25%;
@@ -167,6 +170,9 @@ section {
 
 .btn-3 {
     justify-content: center;
+    @media screen and (min-width: 930px) {
+        justify-content: space-around
+    }
 }
 
 // General
@@ -333,7 +339,7 @@ header {
 #pat {
     .logo {
         width: 100px;
-        @media screen and (min-width: 910px) {
+        @media screen and (min-width: 930px) {
             width: 80%;
         }
     }
@@ -350,12 +356,12 @@ header {
     .partner-logos {
         align-items: center;
         flex-direction: column;
-        @media screen and (min-width: 598px) {
+        @media screen and (min-width: 600px) {
             flex-direction: row;
         }
     }
     .partner-logos .grid-cell {
-        @media screen and (max-width: 818px) and (min-width: 598px) {
+        @media screen and (max-width: 818px) and (min-width: 600px) {
             width: 50%;
         }
     }
@@ -369,9 +375,12 @@ header {
 
 #social {
     background: $dark-blue;
-    @media screen and (min-width: 520px) and (max-width: 639px) {
-        .social-icons {
+    .social-icons {
+        @media screen and (min-width: 520px) and (max-width: 752px) {
             justify-content: center;
+        }
+        @media screen and (min-width: 600px) {
+            // flex-wrap: nowrap;
         }
     }
 }
@@ -402,7 +411,7 @@ footer {
         font-weight: bold;
     }
     .grid {
-        @media screen and (min-width: 597px) {
+        @media screen and (min-width: 600px) {
             justify-content: space-between;
         }
     }
