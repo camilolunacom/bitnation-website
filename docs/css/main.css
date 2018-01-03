@@ -164,9 +164,9 @@ button { background: none; border: none; font-size: 1em; cursor: pointer; }
 
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=search], input[type=submit] { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; cursor: pointer; }
 
-header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; }
+header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
 
-.header-container, .grid, .flex { max-width: 930px; margin: 0 auto; }
+.grid { max-width: 930px; margin: 0 auto; }
 
 section { padding: 50px 0; }
 
@@ -176,8 +176,6 @@ section { padding: 50px 0; }
   .grid .one-quarter { width: 25%; } }
 
 .grid .grid-cell { padding: 15px; }
-
-.header-container { min-height: 65px; padding: 10px 0; }
 
 .btn-3 { justify-content: center; }
 @media screen and (min-width: 930px) { .btn-3 { justify-content: space-around; } }
@@ -202,13 +200,15 @@ section { padding: 50px 0; }
 
 .bigger { font-size: 1.25em; }
 
-header .top-logo { display: inline-block; height: 100%; }
-header .top-logo img { height: 45px; z-index: 2; position: absolute; top: 10px; left: 20px; float: left; }
-header .main-menu { display: none; padding-top: 45px; }
+header .grid { justify-content: space-between; }
+header .top-logo img { width: 120px; z-index: 2; }
+header .top-nav-icon { font-size: 26px; display: block; color: #ffffff; z-index: 2; }
+header .main-menu { display: none; }
 header .main-menu a { color: #ffffff; text-decoration: none; }
 header .menu-item, header .submenu-item { display: block; text-align: center; height: 40px; margin: auto; color: #ffffff; line-height: 40px; }
-header .menu-item { font-weight: bold; }
-header .top-nav-icon { font-size: 26px; display: block; position: absolute; top: 18px; right: 20px; color: #ffffff; z-index: 2; }
+header .menu-item { font-weight: bold; width: 100%; }
+header .dropdown-content { display: none; }
+header .dropdown:hover .dropdown-content { display: block; }
 
 #intro { padding-top: 100px; }
 #intro #logo-pangea { height: 180px; }

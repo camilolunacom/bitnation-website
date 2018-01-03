@@ -125,10 +125,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 65px;
+    padding: 10px 0;
 }
 
 
-.header-container, .grid, .flex {
+.grid {
     max-width: 930px;
     margin: 0 auto;
 }
@@ -160,12 +162,6 @@ section {
 
 .grid .grid-cell {
     padding: 15px;
-}
-
-
-.header-container {
-    min-height: 65px;
-    padding: 10px 0;
 }
 
 .btn-3 {
@@ -244,30 +240,26 @@ section {
 // Sections
 
 header {
-    .top-logo {
-        display: inline-block;
-        height: 100%;
-        img {
-            height: 45px;
-            z-index: 2;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            float: left;
-        }
+    .grid {
+        justify-content: space-between
     }
-    
+    .top-logo img {
+            width: 120px;
+            z-index: 2;
+    }
+    .top-nav-icon {
+        font-size: 26px;
+        display: block;
+        color: $white;
+        z-index: 2;
+    }
     .main-menu {
         display: none;
-        padding-top: 45px;
+        a {
+            color: $white;
+            text-decoration: none;
+        }
     }
-    
-    
-    .main-menu a {
-        color: $white;
-        text-decoration: none;
-    }
-    
     .menu-item, .submenu-item {
         display: block;
         text-align: center;
@@ -276,19 +268,15 @@ header {
         color: $white;
         line-height: 40px;
     }
-    
     .menu-item {
         font-weight: bold;
+        width: 100%;
     }
-    
-    .top-nav-icon {
-        font-size: 26px;
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
         display: block;
-        position: absolute;
-        top: 18px;
-        right:20px;
-        color: $white;
-        z-index: 2;
     }
 }
 

@@ -41,8 +41,14 @@
 </head>
 <body>
 <header>
-<div class="header-container">
-    <a class="top-logo" href="https://camilolunacom.github.io/bitnation-website"><img src="/bitnation-website/img/bitnation-logo-h.png"></a>
+<div class="grid">
+    <div class="grid-cell">
+        <a class="top-logo" href="https://camilolunacom.github.io/bitnation-website"><img src="/bitnation-website/img/bitnation-logo-h.png"></a>
+    </div>
+    <div class="grid-cell">
+        <button class="top-nav-icon" onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></button>
+    </div>
+</div>
     <nav id="topnav" class="main-menu">
         
         <a class="menu-item" href="bitnation-website/vi/" alt="Home">Home</a>
@@ -80,8 +86,6 @@
             </div>
         </span>
     </nav>
-    <button class="top-nav-icon" onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></button>
-</div>
 </header>
 <main>
 <section id="intro">

@@ -1,5 +1,11 @@
-<div class="header-container">
-    <a class="top-logo" href="{{ site.url }}/{{ site.baseurl }}"><img src="{{ "/img/bitnation-logo-h.png" | relative_url }}"></a>
+<div class="grid">
+    <div class="grid-cell">
+        <a class="top-logo" href="{{ site.url }}/{{ site.baseurl }}"><img src="{{ "/img/bitnation-logo-h.png" | relative_url }}"></a>
+    </div>
+    <div class="grid-cell">
+        <button class="top-nav-icon" onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></button>
+    </div>
+</div>
     <nav id="topnav" class="main-menu">
         {% for item in site.data.navigation.main %}
         <a class="menu-item" href="{{ site.baseurl }}/{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
@@ -13,5 +19,3 @@
             </div>
         </span>
     </nav>
-    <button class="top-nav-icon" onclick="show_menu()"><i id="openmenu" class="fal fa-bars"></i><i id="closemenu" class="hidden fal fa-times"></i></button>
-</div>
