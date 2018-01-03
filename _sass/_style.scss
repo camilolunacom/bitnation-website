@@ -5,7 +5,7 @@ $blue:          #02afd9;
 $grey:          #f1f1f1;
 $dark-blue:     #000022;
 $alt-blue1:     #012c56;
-$alt-blue:      #3e6181;
+$alt-blue2:      #3e6181;
 
 $source-code:   "SourceCodePro", courier, monospace;
 $helvetica:     "HelveticaNeue", verdana, sans-serif;
@@ -112,6 +112,8 @@ input[type=submit] {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  border: none;
+  cursor: pointer;
 }
 
 // Containers
@@ -177,8 +179,9 @@ section {
     font-weight: bold;
     display: inline-block;
     width: 100%;
-    a, button, input {
+    a, button, input[type=submit] {
         background: $white;
+        color: $blue;
         border-radius: 2px;
         min-width: 260px;
         min-height: 48px;
@@ -190,7 +193,7 @@ section {
 
 .cta-hl {
     @extend .cta;
-    a, button, input {
+    a, button, input[type=submit] {
         background: $blue;
         color: $white;
     }
@@ -363,7 +366,28 @@ header {
 
 #social {
     background: $dark-blue;
+    @media screen and (min-width: 520px) and (max-width: 639px) {
+        .social-icons {
+            justify-content: center;
+        }
+    }
+}
 
+.email-form {
+    justify-content: center;
+    .grid-cell {
+        width: 100%;
+    }
+    .email {
+        background: $alt-blue1;
+        color: $blue;
+        width: 100%;
+        text-align: center;
+        line-height: 48px;
+    }
+    .join {
+        
+    }
 }
 
 // Header
