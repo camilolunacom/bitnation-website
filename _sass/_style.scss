@@ -147,6 +147,14 @@ section {
     vertical-align: middle;
     padding: 0 20px;
     text-align: center;
+    .whole {
+        width: 100%;
+    }
+    @media screen and (max-width: 929px) {
+        .whole-mobile {
+            width: 100%;
+        }
+    }
     @media screen and (min-width: 930px) {
         .three-quarters {
             width: 75%;
@@ -223,7 +231,7 @@ section {
     position: relative;
     height: 0;
     overflow: hidden;
-    padding-bottom: 75%;
+    padding-bottom: 56.2061%;
     iframe {
         position: absolute;
         top: 0;

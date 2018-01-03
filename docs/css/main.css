@@ -171,6 +171,8 @@ header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0
 section { padding: 50px 0; }
 
 .grid { display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; vertical-align: middle; padding: 0 20px; text-align: center; }
+.grid .whole { width: 100%; }
+@media screen and (max-width: 929px) { .grid .whole-mobile { width: 100%; } }
 @media screen and (min-width: 930px) { .grid .three-quarters { width: 75%; }
   .grid .one-third { width: 33.3333%; }
   .grid .one-quarter { width: 25%; } }
@@ -195,7 +197,7 @@ section { padding: 50px 0; }
 
 .icon-xl { font-size: 4.5em; }
 
-.vid-container { position: relative; height: 0; overflow: hidden; padding-bottom: 75%; }
+.vid-container { position: relative; height: 0; overflow: hidden; padding-bottom: 56.2061%; }
 .vid-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .bigger { font-size: 1.25em; }
