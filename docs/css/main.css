@@ -166,11 +166,9 @@ input[type=text], input[type=email], input[type=tel], input[type=url], input[typ
 
 header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
 
-.grid { max-width: 930px; margin: 0 auto; }
-
 section { padding: 50px 0; }
 
-.grid { display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; vertical-align: middle; padding: 0 20px; text-align: center; }
+.grid { max-width: 930px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; vertical-align: middle; padding: 0 20px; text-align: center; }
 .grid .whole { width: 100% !important; }
 @media screen and (max-width: 929px) { .grid .whole-mobile { width: 100% !important; } }
 @media screen and (min-width: 930px) { .grid .three-quarters { width: 75% !important; }
@@ -225,8 +223,7 @@ header .dropdown-content { display: none; }
 @media screen and (min-width: 930px) { #intro { padding-top: 150px; } }
 #intro #logo-pangea { height: 180px; }
 
-#pangea .stats { flex-direction: column; justify-content: center; }
-@media screen and (min-width: 417px) { #pangea .stats { flex-direction: row; } }
+#pangea .stats { justify-content: center; }
 @media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
 #pangea .stats .grid-cell { width: 178px; }
 #pangea .number { font-size: 2em; }

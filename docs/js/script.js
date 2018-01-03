@@ -10,7 +10,7 @@ $( document ).ready(function() {
         }
         event.preventDefault();
     });
-    // Open language dropdown
+    // Open language dropdown on mobile
     $("#active-language").click(function(){
         if($(window).width() < 930){
             $( "#available-languages" ).toggleClass( "visible" );
@@ -18,7 +18,7 @@ $( document ).ready(function() {
         event.preventDefault();
     });
     // Hide dropdown on resize
-    $(window).resize(function(){
-        $("#available-languages").removeClass("visible");
-    });
+    // $(window).resize(function(){
+        // $("#available-languages").removeClass("visible");
+    // });
 });
