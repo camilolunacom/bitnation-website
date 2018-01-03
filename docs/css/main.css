@@ -162,30 +162,38 @@ a, button { text-decoration: none; color: #02afd9; }
 
 button { background: none; border: none; font-size: 1em; cursor: pointer; }
 
-header { background: #1c1819; width: 100%; }
+input[type=text], input[type=email], input[type=tel], input[type=url], input[type=search], input[type=submit] { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; cursor: pointer; }
+
+header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; }
 
 .header-container, .grid, .flex { max-width: 930px; margin: 0 auto; }
 
-.grid-cell, .flex { padding: 0 20px; text-align: center; }
+section { padding: 50px 0; }
+
+.grid { display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; padding: 0 20px; text-align: center; }
+@media screen and (min-width: 910px) { .grid .three-quarters { width: 75%; }
+  .grid .one-quarter { width: 25%; } }
+
+.grid .grid-cell { padding: 15px; }
 
 .header-container { min-height: 65px; padding: 10px 0; }
 
-section { padding: 50px 0; }
-
-.flex { display: flex; flex-wrap: wrap; justify-content: space-around; }
-
-.flex .grid-cell { padding: 15px; }
+.btn-3 { justify-content: center; }
 
 .visible { display: block !important; }
 
 .hidden { display: none !important; }
 
-.cta, .cta-hl { text-transform: uppercase; font-weight: bold; display: inline-block; margin: 10px auto; width: 100%; }
-.cta a, .cta-hl a, .cta button, .cta-hl button { background: #ffffff; border-radius: 2px; min-width: 280px; width: 80%; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
+.cta, .cta-hl { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
+.cta a, .cta-hl a, .cta button, .cta-hl button, .cta input[type=submit], .cta-hl input[type=submit] { background: #ffffff; color: #02afd9; border-radius: 2px; min-width: 260px; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
 
-.cta-hl a, .cta-hl button { background: #02afd9; color: #ffffff; }
+.cta-hl a, .cta-hl button, .cta-hl input[type=submit] { background: #02afd9; color: #ffffff; }
 
-.icon-l { font-size: 3em; }
+.space { margin-top: 15px; margin-bottom: 15px; }
+
+.icon-l { font-size: 3.5em; }
+
+.icon-xl { font-size: 4.5em; }
 
 .vid-container { position: relative; height: 0; overflow: hidden; padding-bottom: 75%; }
 .vid-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
@@ -200,23 +208,33 @@ header .menu-item, header .submenu-item { display: block; text-align: center; he
 header .menu-item { font-weight: bold; }
 header .top-nav-icon { font-size: 26px; display: block; position: absolute; top: 18px; right: 20px; color: #ffffff; z-index: 2; }
 
+#intro { padding-top: 100px; }
 #intro #logo-pangea { height: 180px; }
+
+#pangea .stats { flex-direction: column; justify-content: center; }
+@media screen and (min-width: 417px) { #pangea .stats { flex-direction: row; } }
+@media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
+#pangea .stats .grid-cell { width: 178px; }
+#pangea .number { font-size: 2em; }
+#pangea .descriptor { max-width: 150px; margin: auto; }
 
 #install { background: #f1f1f1; }
 
 #video { background: #02afd9; }
 #video h2 { color: #ffffff; }
 
-#pat .logo { width: 80px; }
+#pat .logo { width: 100px; }
+@media screen and (min-width: 910px) { #pat .logo { width: 80%; } }
 
-@media screen and (max-width: 789px) { #pangea .flex { justify-content: center; }
-  #pangea .flex .grid-cell { width: 150px; min-width: 33.3333%; } }
-#pangea .number { font-size: 2em; }
-
-#partners .flex { align-items: center; flex-direction: column; }
-@media screen and (min-width: 598px) { #partners .flex { flex-direction: row; } }
-@media screen and (max-width: 818px) { #partners .flex .grid-cell { min-width: 50%; } }
+#partners .partner-logos { align-items: center; flex-direction: column; }
+@media screen and (min-width: 598px) { #partners .partner-logos { flex-direction: row; } }
+@media screen and (max-width: 818px) and (min-width: 598px) { #partners .partner-logos .grid-cell { width: 50%; } }
 #partners #abdk { max-height: 70px; }
-#partners #bitcoin-suisse, #partners #netowrk-society-networks { max-height: 60px; }
+#partners #bitcoin-suisse, #partners #network-society-ventures { max-height: 60px; }
 
 #social { background: #000022; }
+@media screen and (min-width: 520px) and (max-width: 639px) { #social .social-icons { justify-content: center; } }
+
+.email-form { justify-content: center; }
+.email-form .grid-cell { width: 100%; }
+.email-form .email { background: #012c56; color: #02afd9; width: 100%; text-align: center; line-height: 48px; }
