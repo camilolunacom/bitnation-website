@@ -171,11 +171,12 @@ header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0
 section { padding: 50px 0; }
 
 .grid { display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; vertical-align: middle; padding: 0 20px; text-align: center; }
-.grid .whole { width: 100%; }
-@media screen and (max-width: 929px) { .grid .whole-mobile { width: 100%; } }
-@media screen and (min-width: 930px) { .grid .three-quarters { width: 75%; }
-  .grid .one-third { width: 33.3333%; }
-  .grid .one-quarter { width: 25%; } }
+.grid .whole { width: 100% !important; }
+@media screen and (max-width: 929px) { .grid .whole-mobile { width: 100% !important; } }
+@media screen and (min-width: 930px) { .grid .three-quarters { width: 75% !important; }
+  .grid .two-thirds { width: 66.6667% !important; }
+  .grid .one-third { width: 33.3333% !important; }
+  .grid .one-quarter { width: 25% !important; } }
 
 .grid .grid-cell { padding: 15px; }
 
@@ -251,6 +252,7 @@ header .dropdown-content { display: none; }
 .email-form { justify-content: center; }
 .email-form .grid-cell { width: 100%; }
 .email-form .email { background: #012c56; color: #02afd9; width: 100%; text-align: center; line-height: 48px; }
+@media screen and (min-width: 930px) { .email-form { flex-wrap: nowrap; } }
 
 footer { background: #02afd9; font-size: 0.8em; padding: 15px 0; }
 footer a { color: #ffffff; font-weight: bold; }

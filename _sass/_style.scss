@@ -148,22 +148,25 @@ section {
     padding: 0 20px;
     text-align: center;
     .whole {
-        width: 100%;
+        width: 100% !important;
     }
     @media screen and (max-width: 929px) {
         .whole-mobile {
-            width: 100%;
+            width: 100% !important;
         }
     }
     @media screen and (min-width: 930px) {
         .three-quarters {
-            width: 75%;
+            width: 75% !important;
+        }
+        .two-thirds {
+            width: 66.6667% !important;
         }
         .one-third {
-            width: 33.3333%;
+            width: 33.3333% !important;
         }
         .one-quarter {
-            width: 25%;
+            width: 25% !important;
         }
     }
 }
@@ -430,8 +433,8 @@ header {
         text-align: center;
         line-height: 48px;
     }
-    .join {
-        
+    @media screen and (min-width: 930px) {
+        flex-wrap: nowrap;
     }
 }
 
