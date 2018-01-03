@@ -247,7 +247,7 @@ header {
             width: 120px;
             z-index: 2;
     }
-    .top-nav-icon {
+    .top-nav-icon button {
         font-size: 26px;
         display: block;
         color: $white;
@@ -255,6 +255,7 @@ header {
     }
     .main-menu {
         display: none;
+        width: 100%;
         a {
             color: $white;
             text-decoration: none;
@@ -275,8 +276,10 @@ header {
     .dropdown-content {
         display: none;
     }
-    .dropdown:hover .dropdown-content {
-        display: block;
+    @media screen and (min-width: 930px){
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     }
 }
 

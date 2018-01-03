@@ -202,13 +202,13 @@ section { padding: 50px 0; }
 
 header .grid { justify-content: space-between; }
 header .top-logo img { width: 120px; z-index: 2; }
-header .top-nav-icon { font-size: 26px; display: block; color: #ffffff; z-index: 2; }
-header .main-menu { display: none; }
+header .top-nav-icon button { font-size: 26px; display: block; color: #ffffff; z-index: 2; }
+header .main-menu { display: none; width: 100%; }
 header .main-menu a { color: #ffffff; text-decoration: none; }
 header .menu-item, header .submenu-item { display: block; text-align: center; height: 40px; margin: auto; color: #ffffff; line-height: 40px; }
 header .menu-item { font-weight: bold; width: 100%; }
 header .dropdown-content { display: none; }
-header .dropdown:hover .dropdown-content { display: block; }
+@media screen and (min-width: 930px) { header .dropdown:hover .dropdown-content { display: block; } }
 
 #intro { padding-top: 100px; }
 #intro #logo-pangea { height: 180px; }
