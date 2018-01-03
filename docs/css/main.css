@@ -171,7 +171,8 @@ header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0
 section { padding: 50px 0; }
 
 .grid { display: flex; flex-wrap: wrap; justify-content: space-around; align-content: center; vertical-align: middle; padding: 0 20px; text-align: center; }
-@media screen and (min-width: 910px) { .grid .three-quarters { width: 75%; }
+@media screen and (min-width: 930px) { .grid .three-quarters { width: 75%; }
+  .grid .one-third { width: 33.3333%; }
   .grid .one-quarter { width: 25%; } }
 
 .grid .grid-cell { padding: 15px; }
@@ -179,6 +180,7 @@ section { padding: 50px 0; }
 .header-container { min-height: 65px; padding: 10px 0; }
 
 .btn-3 { justify-content: center; }
+@media screen and (min-width: 930px) { .btn-3 { justify-content: space-around; } }
 
 .visible { display: block !important; }
 
@@ -224,16 +226,16 @@ header .top-nav-icon { font-size: 26px; display: block; position: absolute; top:
 #video h2 { color: #ffffff; }
 
 #pat .logo { width: 100px; }
-@media screen and (min-width: 910px) { #pat .logo { width: 80%; } }
+@media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
 
 #partners .partner-logos { align-items: center; flex-direction: column; }
-@media screen and (min-width: 598px) { #partners .partner-logos { flex-direction: row; } }
-@media screen and (max-width: 818px) and (min-width: 598px) { #partners .partner-logos .grid-cell { width: 50%; } }
+@media screen and (min-width: 600px) { #partners .partner-logos { flex-direction: row; } }
+@media screen and (max-width: 818px) and (min-width: 600px) { #partners .partner-logos .grid-cell { width: 50%; } }
 #partners #abdk { max-height: 70px; }
 #partners #bitcoin-suisse, #partners #network-society-ventures { max-height: 60px; }
 
 #social { background: #000022; }
-@media screen and (min-width: 520px) and (max-width: 639px) { #social .social-icons { justify-content: center; } }
+@media screen and (min-width: 520px) and (max-width: 752px) { #social .social-icons { justify-content: center; } }
 
 .email-form { justify-content: center; }
 .email-form .grid-cell { width: 100%; }
@@ -241,7 +243,7 @@ header .top-nav-icon { font-size: 26px; display: block; position: absolute; top:
 
 footer { background: #02afd9; font-size: 0.8em; padding: 15px 0; }
 footer a { color: #ffffff; font-weight: bold; }
-@media screen and (min-width: 597px) { footer .grid { justify-content: space-between; } }
+@media screen and (min-width: 600px) { footer .grid { justify-content: space-between; } }
 footer .grid-cell { align-self: center; }
 footer .footer-logo img { width: 200px; vertical-align: middle; }
 footer .footer-text .footer-menu > a::after { content: " | "; }
