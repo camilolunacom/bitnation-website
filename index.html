@@ -188,7 +188,7 @@ layout: default
     <div id="core" class="grid members">
         {% for member in site.data.team.core %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
             <div class="grid-cell photo">
-                <img src="{{ img-url | relative_url }}" alt="">
+                <img src="{{ img-url | relative_url }}" alt="{{ member.name }}">
             </div>
             <div class="grid-cell name">{{ member.name }}</div>
             <div class="grid-cell role">{{ member.role }}</div>
@@ -220,7 +220,7 @@ layout: default
     <div id="advisors" class="grid members">
         {% for member in site.data.team.advisors %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
             <div class="grid-cell photo">
-                <img src="{{ img-url | relative_url }}" alt="">
+                <img src="{{ img-url | relative_url }}" alt="{{ member.name }}">
             </div>
             <div class="grid-cell name">{{ member.name }}</div>
             {% if member.social %}<div class="grid-cell grid links">
