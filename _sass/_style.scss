@@ -1,9 +1,12 @@
 $white:         #ffffff;
-$black:         #020307;
+$bg1:           #020307;
+$bg2:           #1d2a90;
+$bg3:           #1e2a5c;
+$bg4:           #030053;
+$bg5:           #000022;
 $light-black:   rgba(0, 0, 0, 0.9);
 $blue:          #02afd9;
 $grey:          #f1f1f1;
-$dark-blue:     #000022;
 $alt-blue1:     #012c56;
 $alt-blue2:      #3e6181;
 
@@ -12,7 +15,7 @@ $helvetica:     "HelveticaNeue", verdana, sans-serif;
 
 html {
     box-sizing: border-box;
-    background: $black;
+    background: $bg1;
     color: $white;
 }
 
@@ -381,9 +384,18 @@ header {
     }
 }
 
-#history {}
+#history {
+    background: $bg2;
+    h2 {
+        color: $white;
+    }
+}
 
 #team {
+    background: $bg3;
+    h2 {
+        color: $white;
+    }
     .members {
         .member {
             flex-direction: column;
@@ -430,6 +442,10 @@ header {
 }
 
 #partners {
+    background: $bg4;
+    h2 {
+        color: $white;
+    }
     .partner-logos {
         align-items: center;
         flex-direction: column;
@@ -451,7 +467,7 @@ header {
 }
 
 #social {
-    background: $dark-blue;
+    background: $bg5;
     .social-icons {
         @media screen and (min-width: 520px) and (max-width: 752px) {
             justify-content: center;

@@ -238,6 +238,11 @@ header .dropdown-content { display: none; }
 #pat .logo { width: 100px; }
 @media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
 
+#history { background: #1d2a90; }
+#history h2 { color: #ffffff; }
+
+#team { background: #1e2a5c; }
+#team h2 { color: #ffffff; }
 #team .members .member { flex-direction: column; justify-content: flex-start; margin: 0; }
 #team .members .member .grid-cell { padding: 5px 0; max-width: 120px; }
 #team .members .member .photo img { max-width: 120px; border-radius: 50%; }
@@ -248,6 +253,8 @@ header .dropdown-content { display: none; }
 @media screen and (min-width: 639px) { #team #advisors { justify-content: center; } }
 #team #advisors .member { min-width: 25%; }
 
+#partners { background: #030053; }
+#partners h2 { color: #ffffff; }
 #partners .partner-logos { align-items: center; flex-direction: column; }
 @media screen and (min-width: 600px) { #partners .partner-logos { flex-direction: row; } }
 @media screen and (max-width: 818px) and (min-width: 600px) { #partners .partner-logos .grid-cell { width: 50%; } }
