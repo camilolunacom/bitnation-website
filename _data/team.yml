@@ -1,50 +1,62 @@
+core:
+
 - name: Susanne Tarkowski Tempelhof
   role: CEO
-  linkedin: susannetarkowski
-  github: xsttx
+  social:
+    linkedin: susannetarkowski
+    github: xsttx
 
 - name: James Fennell Tempelhof
   role: COO
-  linkedin: james-fennell
+  social:
+    linkedin: james-fennell
 
 - name: Dr. John Matthews
   role: CFO
-  linkedin: johnmathews1
+  social:
+    linkedin: johnmathews1
 
 - name: Eliott Teissonniere
   role: Software Architect
-  github: developpsoft
-  twitter: DeveloppSoft
+  social:
+    github: developpsoft
+    twitter: DeveloppSoft
 
 - name: Erik Vollstädt
   role: Lead Ambassador
-  linkedin: erikvollstaedt
+  social:
+    linkedin: erikvollstaedt
 
 - name: Florian Lenz
   role: Backend Developer
-  github: florianlenz
+  social:
+    github: florianlenz
 
 - name: Daniel França
   role: React Native Developer
-  linkedin: danielcfranca
-  github: danielfranca
-  twitter: danielfranca
+  social:
+    linkedin: danielcfranca
+    github: danielfranca
+    twitter: danielfranca
 
 - name: Kent Dahlgren
   role: AI Developer
-  linkedin: kent-dahlgren-gsec-742a073
-  twitter: kent_dahlgren
+  social:
+    linkedin: kent-dahlgren-gsec-742a073
+    twitter: kent_dahlgren
 
 - name: Mawo
   role: Infrastructure & Security
 
 - name: Johan Nygren
   role: Resident Genius
-  linkedin: resilience_me
+  social:
+    linkedin: resilience_me
 
 - name: Sonja Prstec
   role: Legal Advisor
-  linkedin: sonja-prstec-89a0b324
+  social:
+    linkedin: sonja-prstec-89a0b324
 
 - name: Kenneth Lillieholm
   role: Documentation
@@ -54,60 +66,68 @@
 
 - name: Alma Sommer
   role: Social Media
-  linkedin: rayneberry
-  twitter: EarthPermit
+  social:
+    linkedin: rayneberry
+    twitter: EarthPermit
 
 - name: Björn Paulsson
   role: Project Coordinator
-  linkedin: bjornpaulsson
+  social:
+    linkedin: bjornpaulsson
 
 - name: Adrian Pollio
   role: Graphic Designer
-  linkedin: adrianpollio
-  twitter: adrianpollio
+  social:
+    linkedin: adrianpollio
+    twitter: adrianpollio
 
 - name: Alberto Estarrona
   role: Senior iOS / Android Developer
-  linkedin: alberto-r-estarrona
-  twitter: estarrona
+  social:
+    linkedin: alberto-r-estarrona
+    twitter: estarrona
 
 - name: William Huang
   role: Solidity Developer
-  linkedin: william-h-902213139
-  github: william2958
+  social:
+    linkedin: william-h-902213139
+    github: william2958
 
 - name: Camilo Luna
   role: Web Developer
-  linkedin: camiloluna
-  github: camilolunacom
-  twitter: camilolunacom
+  social:
+    linkedin: camiloluna
+    github: camilolunacom
+    twitter: camilolunacom
+
+advisors:
 
 - name: Rick Falkvinge
-  role: Advisor
-  linkedin: rickfalkvinge
-  twitter: Falkvinge
+  social:
+    linkedin: rickfalkvinge
+    twitter: Falkvinge
 
 - name: David Orban
-  role: Advisor
-  linkedin: davidorban
-  twitter: davidorban
+  social:
+    linkedin: davidorban
+    twitter: davidorban
 
 - name: Vinay Gupta
-  role: Advisor
-  linkedin: vinay-gupta-0072/
-  twitter: leashless
+  social:
+    linkedin: vinay-gupta-0072
+    twitter: leashless
 
 - name: Todd Huffman
-  role: Advisor
-  linkedin: oddmachine/
-  twitter: odd
+  social:
+    linkedin: oddmachine
+    twitter: odd
 
 - name: Kilian Kleinschmidt
-  role: Advisor
-  linkedin: kiliankleinschmidt
-  twitter: KilianK
+  social:
+    linkedin: kiliankleinschmidt
+    twitter: KilianK
 
 - name: Vít Jedlička
-  role: Advisor
-  linkedin: vit-jedlicka-9115aa2
-  twitter: vit_jedlicka
+  social:
+    linkedin: vit-jedlicka-9115aa2
+    twitter: vit_jedlicka

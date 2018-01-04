@@ -379,7 +379,51 @@ header {
 
 #history {}
 
-#team {}
+#team {
+    .members {
+        .member {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            .grid-cell {
+                padding: 5px 0;
+                max-width: 120px;
+            }
+            .photo img {
+                max-width: 120px;
+                border-radius: 50%;
+            }
+            .name {
+                padding-bottom: 0;
+            }
+            .role {
+                font-size: 0.9em;
+                font-weight: 300;
+                padding: 0;
+            }
+            .links {
+                .grid-cell {
+                    padding: 0 5px;
+                    a {
+                        color: $white;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    #core .member {
+        // width: 20%;
+    }
+    #advisors {
+        @media screen and (min-width: 639px) {
+            justify-content: center;
+        }
+        .member {
+            min-width: 25%;
+        }
+    }
+}
 
 #partners {
     .partner-logos {

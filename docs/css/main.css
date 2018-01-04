@@ -237,6 +237,16 @@ header .dropdown-content { display: none; }
 #pat .logo { width: 100px; }
 @media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
 
+#team .members .member { flex-direction: column; justify-content: flex-start; margin: 0; }
+#team .members .member .grid-cell { padding: 5px 0; max-width: 120px; }
+#team .members .member .photo img { max-width: 120px; border-radius: 50%; }
+#team .members .member .name { padding-bottom: 0; }
+#team .members .member .role { font-size: 0.9em; font-weight: 300; padding: 0; }
+#team .members .member .links .grid-cell { padding: 0 5px; }
+#team .members .member .links .grid-cell a { color: #ffffff; font-size: 24px; }
+@media screen and (min-width: 639px) { #team #advisors { justify-content: center; } }
+#team #advisors .member { min-width: 25%; }
+
 #partners .partner-logos { align-items: center; flex-direction: column; }
 @media screen and (min-width: 600px) { #partners .partner-logos { flex-direction: row; } }
 @media screen and (max-width: 818px) and (min-width: 600px) { #partners .partner-logos .grid-cell { width: 50%; } }

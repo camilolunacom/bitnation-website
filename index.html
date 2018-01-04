@@ -185,16 +185,58 @@ layout: default
             <h2>{{ site.data["index"][63] }}</h2>
         </div>
     </div>
-    <div class="grid">
-
+    <div id="core" class="grid members">
+        {% for member in site.data.team.core %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
+            <div class="grid-cell photo">
+                <img src="{{ img-url | relative_url }}" alt="">
+            </div>
+            <div class="grid-cell name">{{ member.name }}</div>
+            <div class="grid-cell role">{{ member.role }}</div>
+            {% if member.social %}<div class="grid-cell grid links">
+                {% if member.social.linkedin %}<div class="grid-cell">
+                    <a href="https://www.linkedin.com/in/{{ member.social.linkedin }}/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>{% endif %}
+                {% if member.social.twitter %}<div class="grid-cell">
+                    <a href="https://twitter.com/{{ member.social.twitter }}">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>{% endif %}{% if member.social.github %}
+                <div class="grid-cell">
+                    <a href="https://github.com/{{ member.social.github }}">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>{% endif %}
+            </div>{% endif %}
+        </div>
+        {% endfor %}
     </div>
     <div class="grid">
         <div class="grid-cell">
             <h2>{{ site.data["index"][64] }}</h2>
         </div>
     </div>
-    <div class="grid">
-
+    <div id="advisors" class="grid members">
+        {% for member in site.data.team.advisors %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
+            <div class="grid-cell photo">
+                <img src="{{ img-url | relative_url }}" alt="">
+            </div>
+            <div class="grid-cell name">{{ member.name }}</div>
+            {% if member.social %}<div class="grid-cell grid links">
+                {% if member.social.linkedin %}<div class="grid-cell">
+                    <a href="https://www.linkedin.com/in/{{ member.social.linkedin }}/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>{% endif %}
+                {% if member.social.twitter %}<div class="grid-cell">
+                    <a href="https://twitter.com/{{ member.social.twitter }}">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>{% endif %}
+            </div>{% endif %}
+        </div>
+        {% endfor %}
     </div>
 </section>
 
