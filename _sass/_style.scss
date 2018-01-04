@@ -295,6 +295,10 @@ header {
         font-weight: bold;
         width: 100%;
     }
+    #active-language {
+        position: relative;
+        top: 2px;
+    }
     .dropdown-content {
         display: none;
     }

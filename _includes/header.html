@@ -12,15 +12,13 @@
                 <a class="menu-item" href="{{ site.baseurl }}/{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
             </div>
             {% endfor %}
-            <div class="grid-cell">
-                <span class="dropdown">
+            <div class="grid-cell dropdown">
                     <button id ="active-language" class="menu-item">{{ site.language_names[site.active_lang] }}</button>
                     <div id="available-languages" class="dropdown-content">
                         {% for language in site.languages %}{% if language != site.active_lang %}
                         <a class="submenu-item" href="{% if language == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %}{{site.baseurl}}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
                         {% endif %}{% endfor %}
                     </div>
-                </span>
             </div>
         </nav>
     </div>

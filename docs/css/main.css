@@ -212,6 +212,7 @@ header .main-nav { flex-direction: column; }
 @media screen and (max-width: 929px) { header .main-nav .grid-cell { padding: 0; } }
 header .menu-item, header .submenu-item { display: block; text-align: center; height: 40px; margin: auto; color: #ffffff; line-height: 40px; }
 header .menu-item { font-weight: bold; width: 100%; }
+header #active-language { position: relative; top: 2px; }
 header .dropdown-content { display: none; }
 @media screen and (min-width: 930px) { header .top-nav-icon { display: none; }
   header .grid .main-menu { display: block; width: auto; padding: 0; }
