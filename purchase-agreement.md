@@ -1,3 +1,4 @@
 ---
-layout: default
+layout: page
+title: Purchase Agreement
 ---
