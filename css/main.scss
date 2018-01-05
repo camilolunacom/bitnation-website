@@ -4,3 +4,6 @@
 @import "mixins";
 @import "normalize";
 @import "style";
+body::after {
+    background: $bg1 url('{{ "/img/bg-static.png" | relative_url }}') no-repeat center center;
+}
