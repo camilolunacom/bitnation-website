@@ -123,6 +123,9 @@ button {
     border: none;
     font-size: 1em;
     cursor: pointer;
+    padding: 0;
+    text-transform: inherit;
+    font-weight: inherit;
 }
 
 input[type=text],

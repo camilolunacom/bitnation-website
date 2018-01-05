@@ -164,7 +164,7 @@ p, li { font-weight: 300; line-height: 2; margin: 15px auto; }
 
 a, button { text-decoration: none; color: #02afd9; }
 
-button { background: none; border: none; font-size: 1em; cursor: pointer; }
+button { background: none; border: none; font-size: 1em; cursor: pointer; padding: 0; text-transform: inherit; font-weight: inherit; }
 
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=search], input[type=submit] { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; cursor: pointer; }
 
