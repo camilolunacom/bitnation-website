@@ -7,13 +7,13 @@
 {% endif %}
 </head>
 <body>
-<header>
+<header class="main-header">
 {% include header.html %}
 </header>
 <main{% if site.active_lang == "ar" %} dir="rtl"{% endif %}>
 {{ content }}
 </main>
-<footer>
+<footer class="main-footer">
 {% include footer.html %}
 </footer>
 </body>
