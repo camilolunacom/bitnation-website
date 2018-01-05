@@ -146,6 +146,8 @@ html { box-sizing: border-box; background: #020307; color: #ffffff; }
 @font-face { font-family: 'SourceCodePro'; src: url("../fonts/SourceCodePro-Bold.ttf"); font-weight: bold; }
 body { font-family: "HelveticaNeue", verdana, sans-serif; font-size: 16px; line-height: 1.5; }
 
+body::after { content: ""; position: fixed; top: 0; height: 100vh; left: 0; right: 0; z-index: -1; background: #020307 url("{{ '/img/bg-static.png' | relative_url }}") no-repeat center center; background-size: auto auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
 h1, h2, h3, h4, h5, h6 { font-weight: bold; text-align: inherit; line-height: 1.2; }
 
 h1, h2 { font-family: "SourceCodePro", courier, monospace; color: #02afd9; }
@@ -226,7 +228,7 @@ header .dropdown-content { display: none; }
 
 #intro { padding-top: 100px; }
 @media screen and (min-width: 930px) { #intro { padding-top: 150px; } }
-#intro #logo-pangea { height: 180px; }
+#intro .logo-pangea { height: 180px; }
 
 #pangea .stats { justify-content: center; }
 @media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
