@@ -71,7 +71,7 @@ body::after {
     left: 0;
     right: 0;
     z-index: -1;
-    background: $bg1 url("{{ '/img/bg-static.png' | relative_url }}") no-repeat center center;
+    background: $bg1 url("/img/bg-static.png") no-repeat center center;
     background-size: auto auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -147,15 +147,8 @@ svg {
 
 // Containers
 
-header {
-    background:$light-black;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 65px;
-    padding: 10px 0;
+main {
+    min-height: 100vh;
 }
 
 section {
@@ -276,6 +269,14 @@ section {
 // Sections
 
 header {
+    background:$light-black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 65px;
+    padding: 10px 0;
     .grid {
         justify-content: space-between
     }
@@ -575,6 +576,7 @@ footer {
     background: $blue;
     font-size: 0.8em;
     padding: 15px 0;
+    
     a {
         color: $white;
         font-weight: bold;
