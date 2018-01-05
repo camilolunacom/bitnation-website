@@ -2,3 +2,33 @@
 layout: default
 title: Documents
 ---
+{% assign text = site.data.documents %}
+<div id="documents">
+    <div class="grid">
+        <div class="grid-cell">
+            <h1>{{ text[1] }}</h1>
+        </div>
+    </div>
+    <div class="grid documents">
+        {% for document in site.data.docs %}<div class="grid-cell document half">
+            <div class="grid-cell title">
+                <h3>{{ document.title }}</h3>
+            </div>
+            {% if document.description %}<div class="grid-cell description">
+                <p>{{ document.description }}</p>
+            </div>{% endif %}
+            <div class="grid-cell download">
+                <div class="cta">
+                    <a href="{{ document.url }}">{{ text[2] }}</a>
+                </div>
+            </div>
+            {% if document.translations %}
+            <div class="grid-cell">
+                <h4>{{ text[3] }}</h4>
+            </div>
+            <div class="grid grid-cell translations">
+                {% for lang in document.translations %}{% assign tongue = lang[0] %}<a class="grid-cell language" href="{{ lang }}">{{ site.language_names[tongue] }}</a>{% endfor %}
+            </div>
+        </div>{% endif %}{% endfor %}
+    </div>
+</div>

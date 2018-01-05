@@ -16,7 +16,7 @@
                     <button id ="active-language" class="menu-item">{{ site.language_names[site.active_lang] }}</button>
                     <div id="available-languages" class="dropdown-content">
                         {% for language in site.languages %}{% if language != site.active_lang %}
-                        <a class="submenu-item" href="{% if language == site.default_lang %} {{ page.url | relative_url }} {% else %}{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language]   }}</a>
+                        <a class="submenu-item" href="{% if language == site.default_lang %} {{ page.url | relative_url }} {% else %}{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/{{ language }}{{page.url}}{% endif %}">{{ site.language_names[language] }}</a>
                         {% endif %}{% endfor %}
                     </div>
             </div>

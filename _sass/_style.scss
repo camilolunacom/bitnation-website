@@ -89,12 +89,16 @@ h1, h2 {
     color: $blue;
 }
 
-h3, h4 {
+h1, h3 {
     text-transform: uppercase;
 }
 
 h2 {
     font-size: 1.9em;
+}
+
+h3 {
+    font-size: 1.3em;
 }
 
 h4 {
@@ -125,6 +129,10 @@ button {
     padding: 0;
     text-transform: inherit;
     font-weight: inherit;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: $helvetica;
 }
 
 input[type=text],
@@ -189,6 +197,9 @@ section {
         }
         .two-thirds {
             width: 66.6667% !important;
+        }
+        .half {
+            width: 50% !important;
         }
         .one-third {
             width: 33.3333% !important;
@@ -333,10 +344,6 @@ section {
     .menu-item {
         font-weight: bold;
         width: 100%;
-    }
-    #active-language {
-        position: relative;
-        top: 2px;
     }
     .dropdown-content {
         display: none;
@@ -645,5 +652,30 @@ section {
         text-align: center;
         font-weight: bold;
         text-transform: uppercase;
+    }
+}
+
+#documents {
+    .grid {
+        justify-content: center;
+    }
+    .document {
+        margin-bottom: 30px;
+        h4 {
+            margin-bottom: 15px;
+        }
+        .cta {
+            width: initial;
+            max-width: 100%;
+        }
+    }
+    .document > .grid-cell {
+        padding: 0;
+    }
+    .translations {
+        justify-content: center;
+        .grid-cell {
+            padding: 5px 15px;
+        }
     }
 }
