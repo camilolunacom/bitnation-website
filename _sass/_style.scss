@@ -107,7 +107,7 @@ h5 {
     margin: 15px auto;
 }
 
-p {
+p, li {
     font-weight: 300;
     line-height: 2;
     margin: 15px auto;
@@ -145,10 +145,18 @@ svg {
     fill: $white;
 }
 
+b, strong {
+    font-weight: bold;
+}
+
 // Containers
 
 main {
     min-height: 100vh;
+    padding-top: 80px;
+    @media screen and (min-width: 930px) {
+        padding-top: 90px;
+    }
 }
 
 section {
@@ -268,7 +276,7 @@ section {
 
 // Sections
 
-header {
+.main-header {
     background:$light-black;
     width: 100%;
     position: absolute;
@@ -356,9 +364,8 @@ header {
 }
 
 #intro {
-    padding-top: 100px;
     @media screen and (min-width: 930px){
-        padding-top: 150px;
+        padding-top: 50px;
     }
     .logo-pangea {
         height: 180px;
@@ -572,7 +579,7 @@ header {
     }
 }
 
-footer {
+.main-footer {
     background: $blue;
     font-size: 0.8em;
     padding: 15px 0;
@@ -604,5 +611,37 @@ footer {
             font-weight: 300;
             margin-top: 15px;
         }
+    }
+}
+
+// Other pages
+
+.white-container {
+    max-width: 930px;
+    margin: auto;
+    padding: 15px;
+    header {
+        text-align: center;
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+    .content {
+        background: $white;
+        color: $bg1;
+        padding: 15px 30px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+    }
+    .meta {
+        line-height: 1.5;
+        font-style: italic;
+        font-weight: 300;
+        display: block;
+    }
+    .disclaimer {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
