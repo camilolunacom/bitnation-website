@@ -146,7 +146,7 @@ html { box-sizing: border-box; background: #020307; color: #ffffff; }
 @font-face { font-family: 'SourceCodePro'; src: url("../fonts/SourceCodePro-Bold.ttf"); font-weight: bold; }
 body { font-family: "HelveticaNeue", verdana, sans-serif; font-size: 16px; line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: bold; text-align: center; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; text-align: inherit; line-height: 1.2; }
 
 h1, h2 { font-family: "SourceCodePro", courier, monospace; color: #02afd9; }
 
@@ -156,13 +156,17 @@ h2 { font-size: 1.9em; }
 
 h4 { font-size: 1.2em; }
 
-p { font-weight: 300; line-height: 2; }
+h5 { font-size: 1em; margin: 15px auto; }
+
+p { font-weight: 300; line-height: 2; margin: 15px auto; }
 
 a, button { text-decoration: none; color: #02afd9; }
 
 button { background: none; border: none; font-size: 1em; cursor: pointer; }
 
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=search], input[type=submit] { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; cursor: pointer; }
+
+svg { fill: #ffffff; }
 
 header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
 
@@ -238,8 +242,18 @@ header .dropdown-content { display: none; }
 #pat .logo { width: 100px; }
 @media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
 
-#history { background: #1d2a90; }
+#history { background: #1d2a90; /* The actual timeline (the vertical ruler) */ }
 #history h2 { color: #ffffff; }
+#history .timeline { position: relative; width: 100%; }
+#history .timeline::after { content: ''; position: absolute; width: 2px; background-color: white; top: 0; bottom: 0; left: 30px; }
+#history .event { text-align: left; position: relative; width: 100%; padding: 15px; padding-left: 70px; }
+#history .event::after { content: ''; position: absolute; width: 24px; height: 24px; left: 4px; background-color: white; top: 28px; border-radius: 50%; z-index: 1; }
+@media all and (min-width: 930px) { #history .timeline::after { left: 50%; }
+  #history .event { width: 50%; padding: 15px 40px; }
+  #history .event:nth-of-type(2n+1) { text-align: right; }
+  #history .event:nth-of-type(2n) { left: 50%; }
+  #history .event::after { right: -13px; left: initial; }
+  #history .event:nth-of-type(2n)::after { left: -11px; } }
 
 #team { background: #1e2a5c; }
 #team h2 { color: #ffffff; }

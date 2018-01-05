@@ -177,6 +177,19 @@ layout: default
             <h2>{{ site.data["index"][41] }}</h2>
         </div>
     </div>
+    <div class="grid">
+        <div class="grid-cell timeline">
+            {% for event in site.data.events %}
+            <div class="event">
+                <div class="title">
+                    <h5>{{ event.date }}: {{ event.title }}</h>
+                </div>
+                <div class="description">
+                    <p>{{ event.description }}</p>
+                </div>
+            </div>{% endfor %}
+        </div>
+    </div>
 </section>
 
 <section id="team">
