@@ -10,7 +10,7 @@
 <header class="main-header">
 {% include header.html %}
 </header>
-<main>
+<main{% if site.rtl_languages contains site.active_lang %} class="rtl"{% endif %}>
 {{ content }}
 </main>
 <footer class="main-footer">
