@@ -222,6 +222,8 @@ section { padding: 50px 0; }
   .grid .one-third { width: 33.3333% !important; }
   .grid .one-quarter { width: 25% !important; } }
 
+.grid.full { width: 100%; }
+
 .grid .grid-cell { padding: 15px; }
 
 .btn-3 { justify-content: center; }
@@ -279,7 +281,8 @@ section { padding: 50px 0; }
 #pangea .number { font-size: 2em; }
 #pangea .descriptor { max-width: 150px; margin: auto; }
 
-#install { background: url("../img/bg-pangea.jpg") repeat-y; }
+#install { background: #f1f1f1 url("../img/bg-pangea.jpg") repeat-y; }
+#install .pangea-screens { width: 930px; }
 #install .app-store-badge { height: 60px; width: 180px; }
 #install .google-play-badge { height: 60px; }
 

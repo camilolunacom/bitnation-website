@@ -232,6 +232,10 @@ section {
     }
 }
 
+.grid.full {
+    width: 100%;
+}
+
 .grid .grid-cell {
     padding: 15px;
 }
@@ -433,7 +437,10 @@ section {
 }
 
 #install {
-    background: url("../img/bg-pangea.jpg") repeat-y;
+    background: $grey url("../img/bg-pangea.jpg") repeat-y;
+    .pangea-screens {
+        width: 930px;
+    }
     .app-store-badge {
         height: 60px;
         width: 180px;
