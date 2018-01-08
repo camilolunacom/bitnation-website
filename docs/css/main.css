@@ -172,7 +172,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 body { font-family: "HelveticaNeue", verdana, sans-serif; font-size: 16px; line-height: 1.5; }
 
-body::after { content: ""; position: fixed; top: 0; height: 100vh; left: 0; right: 0; z-index: -1; background-size: auto auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+body::after { background: #020307 url("../img/bg-static.jpg") no-repeat center center; content: ""; position: fixed; top: 0; height: 100vh; left: 0; right: 0; z-index: -1; background-size: auto auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; text-align: inherit; line-height: 1.2; }
 
@@ -198,7 +198,7 @@ button, input, optgroup, select, textarea, label { font-family: inherit; text-tr
 
 input[type=text], input[type=email], input[type=tel], input[type=url], input[type=search], input[type=submit] { appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; border: none; cursor: pointer; }
 
-svg { fill: #ffffff; }
+svg.white { fill: #ffffff; }
 
 b, strong { font-weight: bold; }
 
@@ -206,8 +206,10 @@ b, strong { font-weight: bold; }
 .rtl #history .timeline { direction: ltr; }
 .rtl #history .timeline .event > div > * { direction: rtl; }
 
-main { min-height: 100vh; padding-top: 80px; }
-@media screen and (min-width: 930px) { main { padding-top: 90px; } }
+main { min-height: 100vh; }
+
+main > *:first-child { padding-top: 80px; }
+@media screen and (min-width: 930px) { main > *:first-child { padding-top: 90px; } }
 
 section { padding: 50px 0; }
 
@@ -229,6 +231,8 @@ section { padding: 50px 0; }
 
 .hidden { display: none !important; }
 
+.flex-center { justify-content: center; }
+
 .cta, .cta-hl { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
 .cta a, .cta-hl a, .cta button, .cta-hl button, .cta input[type=submit], .cta-hl input[type=submit] { background: #ffffff; color: #02afd9; border-radius: 2px; min-width: 260px; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
 
@@ -245,7 +249,7 @@ section { padding: 50px 0; }
 
 .bigger { font-size: 1.25em; }
 
-.main-header { background: rgba(0, 0, 0, 0.9); width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
+.main-header { width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
 .main-header .grid { justify-content: space-between; }
 .main-header .top-logo { align-self: center; }
 .main-header .top-logo a, .main-header .top-logo img { vertical-align: middle; }
@@ -264,17 +268,20 @@ section { padding: 50px 0; }
   .main-header .dropdown:hover .dropdown-content { display: block; position: absolute; background: rgba(0, 0, 0, 0.9); transform: translateX(-25%); }
   .main-header .submenu-item { padding: 0 30px; } }
 
-#intro { background: #020307; }
-@media screen and (min-width: 930px) { #intro { padding-top: 50px; } }
-#intro .logo-pangea { height: 180px; }
+#intro { background: #020307 url("../img/bg-intro.jpg") no-repeat bottom center; background-size: cover; }
+#intro .logo-pangea { height: 180px; margin-top: 50px; }
+#intro h1 { color: #ffffff; }
 
+#pangea { background: linear-gradient(#020307, rgba(0, 0, 0, 0)); }
 #pangea .stats { justify-content: center; }
 @media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
 #pangea .stats .grid-cell { width: 178px; }
 #pangea .number { font-size: 2em; }
 #pangea .descriptor { max-width: 150px; margin: auto; }
 
-#install { background: #f1f1f1; }
+#install { background: url("../img/bg-pangea.jpg") repeat-y; }
+#install .app-store-badge { height: 60px; width: 180px; }
+#install .google-play-badge { height: 60px; }
 
 #video { background: #02afd9; }
 #video h2 { color: #ffffff; }
@@ -285,15 +292,15 @@ section { padding: 50px 0; }
 #history { background: #1d2a90; /* The actual timeline (the vertical ruler) */ }
 #history h2 { color: #ffffff; }
 #history .timeline { position: relative; width: 100%; }
-#history .timeline::after { content: ''; position: absolute; width: 2px; background-color: white; top: 0; bottom: 0; left: 30px; }
+#history .timeline::after { background: url("../img/chain.svg") repeat-y; content: ''; position: absolute; width: 8px; top: 0; bottom: 0; left: 30px; }
 #history .event { text-align: left; position: relative; width: 100%; padding: 15px; padding-left: 70px; }
-#history .event::after { content: ''; position: absolute; width: 24px; height: 24px; left: 4px; background-color: white; top: 28px; border-radius: 50%; z-index: 1; }
+#history .event::after { content: ''; position: absolute; width: 24px; height: 24px; left: 7px; background-color: white; top: 28px; border-radius: 50%; z-index: 1; }
 @media all and (min-width: 930px) { #history .timeline::after { left: 50%; }
   #history .event { width: 50%; padding: 15px 40px; }
   #history .event:nth-of-type(2n+1) { text-align: right; }
   #history .event:nth-of-type(2n) { left: 50%; }
-  #history .event::after { right: -13px; left: initial; }
-  #history .event:nth-of-type(2n)::after { left: -11px; } }
+  #history .event::after { right: -16px; left: initial; }
+  #history .event:nth-of-type(2n)::after { left: -8px; } }
 
 #team { background: #1e2a5c; }
 #team h2 { color: #ffffff; }
@@ -350,5 +357,3 @@ section { padding: 50px 0; }
 #documents .document > .grid-cell { padding: 0; }
 #documents .translations { justify-content: center; }
 #documents .translations .grid-cell { padding: 5px 15px; }
-
-body::after { background: #020307 url("/bitnation-website/img/bg-static.png") no-repeat center center; }
