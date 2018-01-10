@@ -93,7 +93,7 @@ layout: default
     </div>
     <div class="grid">
         <div class="grid-cell">
-            <img class="pangea-screens" src="{{ "/img/pangea-devices.png"| relative_url }}" alt="Pangea Mockup Screenshots">
+            <img class="pangea-screens" src="{{ "/img/pangea-devices.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
         </div>
     </div>
     <div class="grid flex-center">
@@ -147,7 +147,7 @@ layout: default
               </a>
         </div>
         <div class="grid-cell">
-            <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile"><img class="google-play-badge" src="{{ "/img/google-play-badge.png" | relative_url }}"></a>
+            <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile"><img class="google-play-badge" src="{{ "/img/google-play-badge.png" | absolute_url }}"></a>
         </div>
     </div>
 </section>
@@ -199,13 +199,13 @@ layout: default
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="{{ "/documents/" | relative_url }}">{{ text["Overview"] }}</a>
+                <a href="{{ "/documents/" | absolute_url }}">{{ text["Overview"] }}</a>
             </div>
         </div>
     </div>
     <div class="grid">
         <div class="grid-cell">
-            <p class="bigger">{{ text["PAT tokens are issued by BITNATION GmbH, Baarerstrasse 10, CH-6302 Zug, Switzerland, CHE-166.292.408."] }}<br><a href="{{ "/purchase-agreement/" | relative_url }}">{{ text["Click here to read the Bitnation PAT Token Sale Agreement."] }}</a></p>
+            <p class="light">{{ text["PAT tokens are issued by BITNATION GmbH, Baarerstrasse 10, CH-6302 Zug, Switzerland, CHE-166.292.408."] }}<br><a href="{{ "/purchase-agreement/" | absolute_url }}">{{ text["Click here to read the Bitnation PAT Token Sale Agreement."] }}</a></p>
         </div>
     </div>
     <div class="grid pat-chars">
@@ -235,7 +235,7 @@ layout: default
     </div>
     <div class="grid">
         <div class="grid-cell timeline">
-            {% if site.rtl_languages contains site.active_lang %}<div class="event hidden"></div>{% endif %}{% for event in text.history-events %}
+            {% if site.rtl_languages contains site.active_lang %}<div class="event hidden"></div>{% endif %}{% for event in site.data.history-events %}
             <div class="event">
                 <div class="title">
                     <h5>{{ event.date }}: {{ event.title }}</h>
@@ -257,7 +257,7 @@ layout: default
     <div id="core" class="grid members">
         {% for member in site.data.team.core %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
             <div class="grid-cell photo">
-                <img src="{{ img-url | relative_url }}" alt="{{ member.name }}">
+                <img src="{{ img-url | absolute_url }}" alt="{{ member.name }}">
             </div>
             <div class="grid-cell name">{{ member.name }}</div>
             <div class="grid-cell role">{{ member.role }}</div>
@@ -289,7 +289,7 @@ layout: default
     <div id="advisors" class="grid members">
         {% for member in site.data.team.advisors %}{% assign img-url = member.name | slugify: 'ascii' | prepend: "/img/team/" | append: ".jpg" %}<div class="grid-cell grid member">
             <div class="grid-cell photo">
-                <img src="{{ img-url | relative_url }}" alt="{{ member.name }}">
+                <img src="{{ img-url | absolute_url }}" alt="{{ member.name }}">
             </div>
             <div class="grid-cell name">{{ member.name }}</div>
             {% if member.social %}<div class="grid-cell grid links">
@@ -318,27 +318,27 @@ layout: default
     <div class="grid partner-logos">
         <div class="grid-cell">
             <a class="logo-partner" href="https://www.abdk.consulting/" target="_blank">
-                <img id="abdk" src="{{ "/img/logo-abdk.png" | relative_url }}" alt="ABDK Consulting">
+                <img id="abdk" src="{{ "/img/logo-abdk.png" | absolute_url }}" alt="ABDK Consulting">
             </a>
         </div>
         <div class="grid-cell">
             <a class="logo-partner" href="https://www.bitcoinsuisse.ch/" target="_blank">
-                <img id="bitcoin-suisse" src="{{ "/img/logo-bitcoin-suisse.png" | relative_url }}" alt="Bitcoin Suisse">
+                <img id="bitcoin-suisse" src="{{ "/img/logo-bitcoin-suisse.png" | absolute_url }}" alt="Bitcoin Suisse">
             </a>
         </div>
         <div class="grid-cell">
             <a class="logo-partner" href="https://e-resident.gov.ee/" target="_blank">
-                <img id="e-residency" src="{{ "/img/logo-e-residency.svg" | relative_url }}" alt="Republic of Estonia e-Residency">
+                <img id="e-residency" src="{{ "/img/logo-e-residency.svg" | absolute_url }}" alt="Republic of Estonia e-Residency">
             </a>
         </div>
         <div class="grid-cell">
             <a class="logo-partner" href="http://www.ldjcapital.com/" target="_blank">
-                <img id="ldj-capital" src="{{ "/img/logo-ldj-capital.png" | relative_url }}" alt="LDJ Capital">
+                <img id="ldj-capital" src="{{ "/img/logo-ldj-capital.png" | absolute_url }}" alt="LDJ Capital">
             </a>
         </div>
         <div class="grid-cell">
             <a class="logo-partner" href="http://netsoc.vc/" target="_blank">
-                <img id="network-society-ventures" src="{{ "/img/logo-network-society-ventures.png" | relative_url }}" alt="Network Society Ventures">
+                <img id="network-society-ventures" src="{{ "/img/logo-network-society-ventures.png" | absolute_url }}" alt="Network Society Ventures">
             </a>
         </div>
     </div>
@@ -347,7 +347,7 @@ layout: default
 <section id="social">
     <div class="grid">
         <div class="grid-cell">
-            <h2>{{ text["Our Partners"] }}</h2>
+            <h2>{{ text["Enter Bitnation"] }}</h2>
         </div>
     </div>
     <div class="grid social-icons">

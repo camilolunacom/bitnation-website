@@ -3,6 +3,8 @@ main:
   url: /
 - title: Documents
   url: /documents/
+- title: FAQ
+  url: /faq/
 
 footer:
 - title: Terms of Use

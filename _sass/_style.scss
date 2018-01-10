@@ -10,8 +10,8 @@ $grey:          #f1f1f1;
 $alt-blue1:     #012c56;
 $alt-blue2:      #3e6181;
 
-$titles-font:   "SourceCodePro", courier, monospace;
-$main-font:     "HelveticaNeue", verdana, sans-serif;
+$titles-font:   "Source Code Pro", courier, monospace;
+$main-font:     'Open Sans', sans-serif;;
 
 html {
     box-sizing: border-box;
@@ -21,38 +21,6 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-// Fonts
-
-@font-face {
-    font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeue.ttf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeueMedium.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'HelveticaNeue';
-    src: url('../fonts/HelveticaNeueLight.ttf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'SourceCodePro';
-    src: url('../fonts/SourceCodePro-Regular.ttf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'SourceCodePro';
-    src: url('../fonts/SourceCodePro-Bold.ttf');
-    font-weight: bold;
 }
 
 // Elements
@@ -85,7 +53,7 @@ body::after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+    font-weight: 700;
     text-align: inherit;
     line-height: 1.2;
 }
@@ -117,7 +85,6 @@ h5 {
 }
 
 p, li {
-    font-weight: 300;
     line-height: 2;
     margin: 15px auto;
 }
@@ -313,8 +280,8 @@ section {
     }
 }
 
-.bigger {
-    font-size: 1.25em;
+.light {
+    font-weight: 300;
 }
 
 // Sections
@@ -371,7 +338,7 @@ section {
         line-height: 40px;
     }
     .menu-item {
-        font-weight: bold;
+        font-weight: 700;
         width: 100%;
     }
     .dropdown-content {
@@ -635,7 +602,7 @@ section {
     
     a {
         color: $white;
-        font-weight: bold;
+        font-weight: 700;
     }
     .grid {
         @media screen and (min-width: 600px) {
@@ -707,7 +674,7 @@ section {
     }
     .disclaimer {
         text-align: center;
-        font-weight: bold;
+        font-weight: 700;
         text-transform: uppercase;
     }
 }

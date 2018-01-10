@@ -3,7 +3,6 @@ description: Your Blockchain Jurisdiction
 author: Bitnation
 
 url: https://camilolunacom.github.io
-baseurl: /bitnation-website
 
 plugins:
   - jekyll-sitemap
