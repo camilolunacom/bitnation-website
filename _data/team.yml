@@ -75,6 +75,13 @@ core:
   social:
     linkedin: bjornpaulsson
 
+- name: David Gross
+  role: UX/UI, Project Manager
+  social:
+    linkedin: davidigross
+    github: mimetic
+    twitter: mimetic
+
 - name: Adrian Pollio
   role: Graphic Designer
   social:

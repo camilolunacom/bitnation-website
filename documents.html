@@ -19,7 +19,7 @@ title: Documents
             </div>{% endif %}
             <div class="grid-cell download">
                 <div class="cta">
-                    <a href="{{ document.url }}">{{ text["Download"] }}</a>
+                    <a href="{{ document.url }}" target="_blank">{{ text["Download"] }}</a>
                 </div>
             </div>
             {% if document.translations %}
@@ -27,7 +27,7 @@ title: Documents
                 <h4>{{ text["Translations"] }}:</h4>
             </div>
             <div class="grid grid-cell translations">
-                {% for lang in document.translations %}{% assign tongue = lang[0] %}<a class="grid-cell language" href="{{ lang }}">{{ site.language_names[tongue] }}</a>{% endfor %}
+                {% for lang in document.translations %}{% assign tongue = lang[0] %}<a class="grid-cell language" href="{{ lang[1] }}" target="_blank">{{ site.language_names[tongue] }}</a>{% endfor %}
             </div>
         </div>{% endif %}{% endfor %}
     </div>
