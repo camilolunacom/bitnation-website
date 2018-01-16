@@ -16,12 +16,6 @@ core:
   social:
     linkedin: johnmathews1
 
-- name: Eliott Teissonniere
-  role: Software Architect
-  social:
-    github: developpsoft
-    twitter: DeveloppSoft
-
 - name: Erik Vollstädt
   role: Lead Ambassador
   social:
@@ -31,13 +25,6 @@ core:
   role: Backend Developer
   social:
     github: florianlenz
-
-- name: Daniel França
-  role: React Native Developer
-  social:
-    linkedin: danielcfranca
-    github: danielfranca
-    twitter: danielfranca
 
 - name: Kent Dahlgren
   role: AI Developer
