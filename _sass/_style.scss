@@ -37,7 +37,7 @@ body {
 }
 
 body::after {
-    background: $bg1 url("../img/bg-static.jpg") no-repeat center center;
+    background: $bg1 url("../img/bg-dark-map.jpg") no-repeat center center;
     content: "";
     position: fixed;
     top: 0;
@@ -224,6 +224,14 @@ section {
     display: none !important;
 }
 
+.more {
+    display: none;
+}
+
+.more.visible {
+    display: initial;
+}
+
 .flex-center {
     justify-content: center;
 }
@@ -303,7 +311,7 @@ section {
             vertical-align: middle;
         }
         img {
-                width: 120px;
+                width: 160px;
                 z-index: 2;
         }
     }
@@ -327,6 +335,12 @@ section {
             .grid-cell {
                 padding: 0;
             }
+        }
+        .fa-language {
+            font-size: 30px;
+            vertical-align: middle;
+            bottom: 2px;
+            position: relative;
         }
     }
     .menu-item, .submenu-item {
@@ -369,7 +383,7 @@ section {
 }
 
 #intro {
-    background: $bg1 url("../img/bg-intro.jpg") no-repeat bottom center;
+    background: $bg1 url("../img/bg-main.jpg") no-repeat bottom center;
     background-size: cover;
     .logo-pangea {
         height: 180px;
@@ -380,8 +394,29 @@ section {
     }
 }
 
-#pangea {
+#video {
     background: linear-gradient($bg1, rgba(0,0,0,0));
+}
+
+#install {
+    background: $grey url("../img/bg-light-map.jpg") repeat-y;
+    .pangea-screens {
+        width: 930px;
+    }
+    .app-store-badge {
+        height: 60px;
+        width: 180px;
+    }
+    .google-play-badge {
+        height: 60px;
+    }
+}
+
+#pangea {
+    background: $blue;
+    h2 {
+        color: $white;
+    }
     .stats {
         justify-content: center;
         @media screen and (min-width: 752px) {
@@ -403,27 +438,6 @@ section {
     }
 }
 
-#install {
-    background: $grey url("../img/bg-pangea.jpg") repeat-y;
-    .pangea-screens {
-        width: 930px;
-    }
-    .app-store-badge {
-        height: 60px;
-        width: 180px;
-    }
-    .google-play-badge {
-        height: 60px;
-    }
-}
-
-#video {
-    background: $blue;
-    h2 {
-        color: $white;
-    }
-}
-
 #pat {
     .logo {
         width: 100px;
@@ -431,10 +445,17 @@ section {
             width: 80%;
         }
     }
+    .reviews {
+        justify-content: center;
+        img {
+            width: 100%;
+            max-width: 280px;
+        }
+    }
 }
 
 #history {
-    background: $bg2;
+    background: $blue;
     h2 {
         color: $white;
     }
@@ -495,7 +516,6 @@ section {
 }
 
 #team {
-    background: $bg3;
     h2 {
         color: $white;
     }
@@ -545,7 +565,7 @@ section {
 }
 
 #partners {
-    background: $bg4;
+    background: $bg1 url("../img/bg-main.jpg") no-repeat bottom center;
     h2 {
         color: $white;
     }
@@ -570,7 +590,6 @@ section {
 }
 
 #social {
-    background: $bg5;
     .social-icons {
         @media screen and (min-width: 520px) and (max-width: 752px) {
             justify-content: center;

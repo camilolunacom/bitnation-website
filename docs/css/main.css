@@ -227,7 +227,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 body { font-family: "Open Sans", sans-serif; font-size: 16px; line-height: 1.5; }
 
-body::after { background: #020307 url("../img/bg-static.jpg") no-repeat center center; content: ""; position: fixed; top: 0; height: 100vh; left: 0; right: 0; z-index: -1; background-size: auto auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+body::after { background: #020307 url("../img/bg-dark-map.jpg") no-repeat center center; content: ""; position: fixed; top: 0; height: 100vh; left: 0; right: 0; z-index: -1; background-size: auto auto; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 700; text-align: inherit; line-height: 1.2; }
 
@@ -288,6 +288,10 @@ section { padding: 50px 0; }
 
 .hidden { display: none !important; }
 
+.more { display: none; }
+
+.more.visible { display: initial; }
+
 .flex-center { justify-content: center; }
 
 .cta, .cta-hl { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
@@ -310,12 +314,13 @@ section { padding: 50px 0; }
 .main-header .grid { justify-content: space-between; }
 .main-header .top-logo { align-self: center; }
 .main-header .top-logo a, .main-header .top-logo img { vertical-align: middle; }
-.main-header .top-logo img { width: 120px; z-index: 2; }
+.main-header .top-logo img { width: 160px; z-index: 2; }
 .main-header .top-nav-icon button { font-size: 26px; display: block; color: #ffffff; z-index: 2; }
 .main-header .main-menu { display: none; width: 100%; }
 .main-header .main-menu a { color: #ffffff; text-decoration: none; }
 .main-header .main-nav { flex-direction: column; }
 @media screen and (max-width: 929px) { .main-header .main-nav .grid-cell { padding: 0; } }
+.main-header .main-nav .fa-language { font-size: 30px; vertical-align: middle; bottom: 2px; position: relative; }
 .main-header .menu-item, .main-header .submenu-item { display: block; text-align: center; height: 40px; margin: auto; color: #ffffff; line-height: 40px; }
 .main-header .menu-item { font-weight: 700; width: 100%; }
 .main-header .dropdown-content { display: none; }
@@ -325,29 +330,31 @@ section { padding: 50px 0; }
   .main-header .dropdown:hover .dropdown-content { display: block; position: absolute; background: rgba(0, 0, 0, 0.9); transform: translateX(-25%); }
   .main-header .submenu-item { padding: 0 30px; } }
 
-#intro { background: #020307 url("../img/bg-intro.jpg") no-repeat bottom center; background-size: cover; }
+#intro { background: #020307 url("../img/bg-main.jpg") no-repeat bottom center; background-size: cover; }
 #intro .logo-pangea { height: 180px; margin-top: 50px; }
 #intro h1 { color: #ffffff; }
 
-#pangea { background: linear-gradient(#020307, rgba(0, 0, 0, 0)); }
+#video { background: linear-gradient(#020307, rgba(0, 0, 0, 0)); }
+
+#install { background: #f1f1f1 url("../img/bg-light-map.jpg") repeat-y; }
+#install .pangea-screens { width: 930px; }
+#install .app-store-badge { height: 60px; width: 180px; }
+#install .google-play-badge { height: 60px; }
+
+#pangea { background: #02afd9; }
+#pangea h2 { color: #ffffff; }
 #pangea .stats { justify-content: center; }
 @media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
 #pangea .stats .grid-cell { width: 178px; }
 #pangea .number { font-size: 2em; }
 #pangea .descriptor { max-width: 150px; margin: auto; }
 
-#install { background: #f1f1f1 url("../img/bg-pangea.jpg") repeat-y; }
-#install .pangea-screens { width: 930px; }
-#install .app-store-badge { height: 60px; width: 180px; }
-#install .google-play-badge { height: 60px; }
-
-#video { background: #02afd9; }
-#video h2 { color: #ffffff; }
-
 #pat .logo { width: 100px; }
 @media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
+#pat .reviews { justify-content: center; }
+#pat .reviews img { width: 100%; max-width: 280px; }
 
-#history { background: #1d2a90; /* The actual timeline (the vertical ruler) */ }
+#history { background: #02afd9; /* The actual timeline (the vertical ruler) */ }
 #history h2 { color: #ffffff; }
 #history .timeline { position: relative; width: 100%; }
 #history .timeline::after { background: url("../img/chain.svg") repeat-y; content: ''; position: absolute; width: 8px; top: 0; bottom: 0; left: 30px; }
@@ -360,7 +367,6 @@ section { padding: 50px 0; }
   #history .event::after { right: -16px; left: initial; }
   #history .event:nth-of-type(2n)::after { left: -8px; } }
 
-#team { background: #1e2a5c; }
 #team h2 { color: #ffffff; }
 #team .members .member { flex-direction: column; justify-content: flex-start; margin: 0; }
 #team .members .member .grid-cell { padding: 5px 0; max-width: 120px; }
@@ -372,7 +378,7 @@ section { padding: 50px 0; }
 @media screen and (min-width: 639px) { #team #advisors { justify-content: center; } }
 #team #advisors .member { min-width: 25%; }
 
-#partners { background: #030053; }
+#partners { background: #020307 url("../img/bg-main.jpg") no-repeat bottom center; }
 #partners h2 { color: #ffffff; }
 #partners .partner-logos { align-items: center; flex-direction: column; }
 @media screen and (min-width: 600px) { #partners .partner-logos { flex-direction: row; } }
@@ -380,7 +386,6 @@ section { padding: 50px 0; }
 #partners #abdk, #partners #ldj-capital { max-height: 70px; }
 #partners #bitcoin-suisse, #partners #network-society-ventures { max-height: 60px; }
 
-#social { background: #000022; }
 @media screen and (min-width: 520px) and (max-width: 752px) { #social .social-icons { justify-content: center; } }
 
 .email-form { justify-content: center; }

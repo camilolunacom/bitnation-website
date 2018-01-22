@@ -4,14 +4,30 @@ author: Bitnation
 
 url: https://camilolunacom.github.io
 
+twitter:
+  username: MyBitnation 
+
+facebook:
+  publisher: MyBitnation
+
+logo: 
+
+social:
+  name: Bitnation
+  links:
+    - https://github.com/Bit-Nation
+    - https://twitter.com/@MyBitnation
+    - https://angel.co/bitnation
+    - https://t.me/PangeaBitnation
+    - https://www.facebook.com/MyBitnation
+    - https://steemit.com/@bitnation
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-polyglot
   
 permalink: /:title/
-
-theme: []
 
 sass:
   # style: compressed
@@ -29,7 +45,7 @@ google_analytics_id: UA-106469149-1
 
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localization: ["css", "img", "js", "robots.txt", "sitemap.xml", "favicon.ico"]
+exclude_from_localization: ["css", "img", "js", "robots.txt", "sitemap.xml", "favicon.ico", "fonts"]
 parallel_localization: true
 rtl_languages: ["ar"]
 

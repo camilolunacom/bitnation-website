@@ -1,5 +1,6 @@
 ---
 layout: default
+image: /img/index.png
 ---
 {% assign text = site.data.content %}
 <section id="intro">
@@ -12,12 +13,12 @@ layout: default
     <div class="grid btn-3">
         <div class="grid-cell">
             <div class="cta">
-                <a href="#install">{{ text["Reset the world"] }}</a>
+                <a href="#install">{{ text["Get the App"] }}</a>
             </div>
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="#pat">{{ text["Token sale"] }}</a>
+                <a href="#pat">{{ text["PAT Token Sale"] }}</a>
             </div>
         </div>
         <div class="grid-cell">
@@ -28,59 +29,38 @@ layout: default
     </div>
 </section>
 
-<section id="pangea">
-        <div class="grid">
-            <div class="grid-cell">
-                <h2>{{ text["The Pangea Jurisdiction"] }}</h2>
+<section id="video">
+    <div class="grid">
+        <div class="grid-cell">
+            <h2>{{ text["Bitnation"] }}:<br>{{ text["Borderless, Decentralized, Voluntary"] }}</h2>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell">
+            <p>{{ text["Governance technologies will have a greater long-term positive impact on the lives of billions of people than any of the other Web 3.0 solution currently being developed. Bitnation is the pioneer and most well established project in decentralised Gov.Tech."] }}</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell whole">
+            <div class="vid-container">{% if site.video contains site.active_lang %}{% assign lang = site.active_lang %}{% else %}{% assign lang = site.default_lang %}{% endif %}
+                <iframe src="https://www.youtube.com/embed/{{ site.video[lang] }}" allowfullscreen="" kwframeid="1" frameborder="0"></iframe>
             </div>
         </div>
-        <div class="grid">
-            <div class="grid-cell one-third">
-                <h3>{{ text["Frontier Technology"] }}</h3>
-                <p>{{ text["Pangea is a secure mesh network forming a distributed web, accessed through a smartphone-chat user friendly interface. Blockchain agnostic smart contract functionality powers the Pangea Jurisdiction, currently implemented with Ethereum."] }}</p>
-            </div>
-            <div class="grid-cell one-third">
-                <h3>{{ text["P2P Agreements"] }}</h3>
-                <p>{{ text["Pangea is a decentralized market for legal services. Create and execute peer-to-peer agreements seamlessly across the world, resolve disputes fairly and efficiently. Choose an arbitrator, or become an arbitrator in your field of expertise."] }}</p>
-            </div>
-            <div class="grid-cell one-third">
-                <h3>{{ text["Your Own Nations"] }}</h3>
-                <p>{{ text["On Pangea you can create your own Decentralised Borderless Voluntary Nation (DBVN). Choose your Code of Law and Descision Making Mechanism, write a Constitution and provide Governance Services to Citizens."] }}</p>
-            </div>
+    </div>
+    <div class="grid">
+        <div class="grid-cell">
+            <p>{{ text["Over three billion people worldwide have little or no access to governance services or legal protections. Either because they are part of the global System D informal economy; because they reside in predatory juridictions which censure their identity or way of life through corrupt legal instruments, extortion or coercion; or because they are stateless or refugees.  In addition, many millions - soon to be billions - more also participate in a global economy where their work and social interactions cross the boundaries of current geographic jurisdictions."] }}</p>
+            <p class="more">{{ text["All of these people would benefit from tailor-made borderless jurisdictions which provide protections for their lives and livelihoods. The US$6 billion global legal services industry barely reaches this market and is ripe for disruption."] }}</p>
+            <p class="more">{{ text["Founded in 2014 by Susanne Tarkowski Tempelhof, Bitnation is developing Pangea - a easy to use, smartphone-based and chat-driven polylegal jurisdiction for world citizens and those excluded from legal protection. Pangea delivers this through a marketplace of community building, governance services, arbitration services and the development of smart contracts."] }}</p>
+            <p class="more">{{ text["Mobile chat is increasingly the go-to modality for making business agreements, and chat platforms like WeChat and WhatsApp are the primary tool for doing business in markets such as China and Brazil. On our software opt-in nations can be built and solemn, and legally binding agreements can be made."] }}</p>
+            <p class="more">{{ text["Our tradable ECR-20 Pangea Arbitration Token (PAT) provides incentivise for good governance - populating communities, providing high quality services, making and upholding of smart contracts, and successfully arbitrating disputes. PAT tokens are distributed to users by our AI bot (Lucy) against strict performance criteria - preventing user rewards becoming an attention or popularity contest and ensuring that user reputation cannot be traded."] }}</p>
+            <p class="more">{{ text["Pangea’s mobile-chat frontend is built upon Panthalassa, our native in-house developed, encrypted and quantum resistant mesh communications network. Panthalassa is not a blockchain, it is a decentralised communications network and can write smart contracts to any integrated blockchain - allowing Pangea users to select the blockchain of their choice to run their smart contracts.  Initially Pangea integrated with the Ethereum blockchain - others will follow."] }}</p>
+            <p class="more">{{ text["Pangea’s core governance infrastructure is currently in its third iteration. A frontend demo built on a functional version of Panthalassa is available to download. Our Alpha version, Pangea 0.3, will be released in January 2018 ahead of the PAT token sale."] }}</p>
+            <p class="more">{{ text["Bitnation is the organisation behind Pangea - the world's first Decentralized Borderless Voluntary Nation (DBVN). Bitnation began in July 2014 and has hosted the world’s first blockchain marriage, birth certificate, refugee emergency ID, World Citizenship, DBVN Constitution and more. Our proof-of-concept projects, including the blockchain ID and Public Notary, are used by tens of thousands of Bitnation Citizens and Embassies around the world."] }}</p>
+            <p class="more">{{ text["Bitnation is the winner of UNESCO’s Netexplo Award 2017 for our Emergency Refugee ID system, and has been featured by the Wall Street Journal, Bloomberg, BBC, CNN, WIRED, VICE, TechCrunch, The Economist, Russia Today among many others."] }}</p>
         </div>
-        <div class="grid">
-            <div class="grid-cell">
-                <div class="cta space">
-                    <a href="https://github.com/Bit-Nation/Pangea-Arbitration-Token-PAT/blob/master/BITNATION%20Pangea%20Whitepaper%202017.pdf">{{ text["Whitepaper 2017"] }}</a>
-                </div>
-            </div>
-        </div>
-        <div class="grid stats">
-            <div class="grid-cell">
-                <div class="icon-l"><i class="fal fa-user"></i></div>
-                <div class="number">{{ text["+10K"] }}</div>
-                <div class="descriptor">{{ text["Bitnation Citizens"] }}</div>
-            </div>
-            <div class="grid-cell">
-                <div class="icon-l"><i class="fal fa-users"></i></div>
-                <div class="number">{{ text["+2K"] }}</div>
-                <div class="descriptor">{{ text["Open Source Contributors"] }}</div>
-            </div>
-            <div class="grid-cell">
-                <div class="icon-l"><i class="fal fa-code"></i></div>
-                <div class="number">{{ text["+100K"] }}</div>
-                <div class="descriptor">{{ text["Lines of Code"] }}</div>
-            </div>
-            <div class="grid-cell">
-                <div class="icon-l"><i class="fal fa-globe"></i></div>
-                <div class="number">{{ text["+ 200"] }}</div>
-                <div class="descriptor">{{ text["Embassies & Consulates"] }}</div>
-            </div>
-            <div class="grid-cell">
-                <div class="icon-l"><i class="fal fa-copy"></i></div>
-                <div class="number">{{ text["+5K"] }}</div>
-                <div>{{ text["Contracts Notarized"] }}</div>
-            </div>
+        <div class="grid-cell cta show-more-container">
+            <button class="show-more">{{ text["Read More"] }}</button>
         </div>
     </div>
 </section>
@@ -88,7 +68,7 @@ layout: default
 <section id="install">
     <div class="grid">
         <div class="grid-cell">
-            <h2>{{ text["Your Next Government In Your Hands"] }}</h2>
+            <h2>{{ text["Bitnation is here Download the Pangea App"] }}</h2>
         </div>
     </div>
     <div class="grid">
@@ -152,22 +132,59 @@ layout: default
     </div>
 </section>
 
-<section id="video">
-    <div class="grid">
-        <div class="grid-cell">
-            <h2>{{ text["Bitnation"] }}:<br>{{ text["Borderless, Decentralized, Voluntary"] }}</h2>
-        </div>
-    </div>
-    <div class="grid">
-        <div class="grid-cell whole">
-            <div class="vid-container">{% if site.video contains site.active_lang %}{% assign lang = site.active_lang %}{% else %}{% assign lang = site.default_lang %}{% endif %}
-                <iframe src="https://www.youtube.com/embed/{{ site.video[lang] }}" allowfullscreen="" kwframeid="1" frameborder="0"></iframe>
+<section id="pangea">
+        <div class="grid">
+            <div class="grid-cell">
+                <h2>{{ text["The Pangea Jurisdiction"] }}</h2>
             </div>
         </div>
-    </div>
-    <div class="grid">
-        <div class="grid-cell">
-            <p>{{ text["Bitnation is the world's first Decentralized Borderless Voluntary Nation (DBVN). Bitnation started in July 2014 and hosted the world’s first blockchain marriage, birth certificate, refugee emergency ID, World Citizenship, DBVN Constitution and more. The website proof-of-concept, including the blockchain ID and Public Notary, is used by tens of thousands of Bitnation Citizens and Embassies around the world. Bitnation is the winner of UNESCO’s Netexplo Award 2017, and has been featured by the Wall Street Journal, Bloomberg, BBC, CNN, WIRED, VICE, TechCrunch, The Economist, Russia Today among many others."] }}</p>
+        <div class="grid">
+            <div class="grid-cell one-third">
+                <h3>{{ text["Frontier Technology"] }}</h3>
+                <p>{{ text["Pangea is a secure mesh network forming a distributed web, accessed through a smartphone-chat user friendly interface. Blockchain agnostic smart contract functionality powers the Pangea Jurisdiction, currently implemented with Ethereum."] }}</p>
+            </div>
+            <div class="grid-cell one-third">
+                <h3>{{ text["P2P Agreements"] }}</h3>
+                <p>{{ text["Pangea is a decentralized market for legal services. Create and execute peer-to-peer agreements seamlessly across the world, resolve disputes fairly and efficiently. Choose an arbitrator, or become an arbitrator in your field of expertise."] }}</p>
+            </div>
+            <div class="grid-cell one-third">
+                <h3>{{ text["Your Own Nations"] }}</h3>
+                <p>{{ text["On Pangea you can create your own Decentralised Borderless Voluntary Nation (DBVN). Choose your Code of Law and Descision Making Mechanism, write a Constitution and provide Governance Services to Citizens."] }}</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-cell">
+                <div class="cta space">
+                    <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper 2017"] }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid stats">
+            <div class="grid-cell">
+                <div class="icon-l"><i class="fal fa-user"></i></div>
+                <div class="number">{{ text["+10K"] }}</div>
+                <div class="descriptor">{{ text["Bitnation Citizens"] }}</div>
+            </div>
+            <div class="grid-cell">
+                <div class="icon-l"><i class="fal fa-users"></i></div>
+                <div class="number">{{ text["+2K"] }}</div>
+                <div class="descriptor">{{ text["Open Source Contributors"] }}</div>
+            </div>
+            <div class="grid-cell">
+                <div class="icon-l"><i class="fal fa-code"></i></div>
+                <div class="number">{{ text["+100K"] }}</div>
+                <div class="descriptor">{{ text["Lines of Code"] }}</div>
+            </div>
+            <div class="grid-cell">
+                <div class="icon-l"><i class="fal fa-globe"></i></div>
+                <div class="number">{{ text["+ 200"] }}</div>
+                <div class="descriptor">{{ text["Embassies & Consulates"] }}</div>
+            </div>
+            <div class="grid-cell">
+                <div class="icon-l"><i class="fal fa-copy"></i></div>
+                <div class="number">{{ text["+5K"] }}</div>
+                <div>{{ text["Contracts Notarized"] }}</div>
+            </div>
         </div>
     </div>
 </section>
@@ -189,12 +206,12 @@ layout: default
     <div class="grid btn-3">
         <div class="grid-cell">
             <div class="cta-hl">
-                    <a href="#buy-pat" rel="modal:open">{{ text["Get PAT"] }}</a>
-                </div>
+                <a href="#buy-pat" rel="modal:open">{{ text["Get PAT Tokens"] }}</a>
+            </div>
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="https://github.com/Bit-Nation/Pangea-Arbitration-Token-PAT/blob/master/BITNATION%20Pangea%20Whitepaper%202017.pdf">{{ text["Whitepaper"] }}</a>
+                <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper"] }}</a>
             </div>
         </div>
         <div class="grid-cell">
@@ -223,6 +240,23 @@ layout: default
             <div class="icon-l"><i class="fal fa-object-ungroup"></i></div>
             <h3>{{ text["Powers Pangea"] }}</h3>
             <p>{{ text["More than a third of PAT is reserved to power the Pangea Jurisdiction. Citizens garner non-tradable reputation tokens based on successful contract execution. Arbitrators and contracts also accumulate non-tradable tokens. Citizens are rewarded with PAT for accumulating non-tradable reputation tokens when milestones are reached."] }}</p>
+        </div>
+    </div>
+    <div class="grid reviews">
+        <div class="grid-cell one-third">
+            <a href="https://cryptohydra.com/ico-reports/pangea-arbitration-token-pat-ico/" target="_blank">
+                <img src="{{ "/img/crypto-hydra.png" | absolute_url }}" alt="Crypto Hydra: Highly Unique">
+            </a>
+        </div>
+        <div class="grid-cell one-third">
+            <a href="http://www.icoranker.com/bitnation/" target="_blank">
+                <img src="{{ "/img/icoranker.png" | absolute_url }}" alt="ICO Ranker: 95% - Gold">
+            </a>
+        </div>
+        <div class="grid-cell one-third">
+            <a href="https://icobench.com/ico/bitnation" target="_blank">
+                <img src="{{ "/img/icobench.png" | absolute_url }}" alt="ICO Bench: 4.5/5 Stars">
+            </a>
         </div>
     </div>
 </section>
@@ -347,7 +381,7 @@ layout: default
 <section id="social">
     <div class="grid">
         <div class="grid-cell">
-            <h2>{{ text["Enter Bitnation"] }}</h2>
+            <h2>{{ text["Join Bitnation"] }}</h2>
         </div>
     </div>
     <div class="grid social-icons">

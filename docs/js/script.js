@@ -17,8 +17,8 @@ $( document ).ready(function() {
         }
         event.preventDefault();
     });
-    // Hide dropdown on resize
-    // $(window).resize(function(){
-        // $("#available-languages").removeClass("visible");
-    // });
+    $(".show-more").click(function(){
+        $( ".more" ).toggleClass( "visible" );
+        $( ".show-more-container" ).toggleClass( "hidden" );
+    });
 });
