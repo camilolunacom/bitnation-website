@@ -5,10 +5,11 @@ $bg3:           #1e2a5c;
 $bg4:           #030053;
 $bg5:           #000022;
 $light-black:   rgba(0, 0, 0, 0.9);
-$blue:          #02afd9;
+$dark-blue:     #002878;
+$blue:          #009bd6;
 $grey:          #f1f1f1;
 $alt-blue1:     #012c56;
-$alt-blue2:      #3e6181;
+$alt-blue2:     #3e6181;
 
 $titles-font:   "Source Code Pro", courier, monospace;
 $main-font:     'Open Sans', sans-serif;;
@@ -199,6 +200,10 @@ section {
     }
 }
 
+.grid.even {
+    justify-content: space-evenly;
+}
+
 .grid.full {
     width: 100%;
 }
@@ -224,6 +229,10 @@ section {
     display: none !important;
 }
 
+.dark-bg {
+    background-color: $light-black;
+}
+
 .more {
     display: none;
 }
@@ -236,6 +245,10 @@ section {
     justify-content: center;
 }
 
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
 .cta {
     text-transform: uppercase;
     font-weight: bold;
@@ -243,7 +256,24 @@ section {
     width: 100%;
     a, button, input[type=submit] {
         background: $white;
-        color: $blue;
+        color: $dark-blue;
+        border-radius: 2px;
+        min-width: 260px;
+        min-height: 48px;
+        padding: 12px 30px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.show-more-container {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    a, button, input[type=submit] {
+        color: $white;
+        border: $white 1px solid;
         border-radius: 2px;
         min-width: 260px;
         min-height: 48px;
@@ -259,6 +289,10 @@ section {
         background: $blue;
         color: $white;
     }
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .space {
@@ -373,7 +407,6 @@ section {
         .dropdown:hover .dropdown-content {
             display: block;
             position: absolute;
-            background: $light-black;
             transform: translateX(-25%);
         }
         .submenu-item {
@@ -383,7 +416,7 @@ section {
 }
 
 #intro {
-    background: $bg1 url("../img/bg-main.jpg") no-repeat bottom center;
+    background: $bg1 url("../img/bg-main.jpg") center center no-repeat;
     background-size: cover;
     .logo-pangea {
         height: 180px;
@@ -392,6 +425,16 @@ section {
     h1 {
         color: $white;
     }
+    @media screen and (min-width: 930px) {
+        min-height: 750px;
+        .grid {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .logo-pangea {
+            margin-top: 75px;
+        }
+    }
 }
 
 #video {
@@ -399,9 +442,14 @@ section {
 }
 
 #install {
-    background: $grey url("../img/bg-light-map.jpg") repeat-y;
+    background: $grey url("../img/bg-light-map.jpg") center center no-repeat;
+    background-size: cover;
+    h2 {
+        color: $white;
+    }
     .pangea-screens {
-        width: 930px;
+        max-width: 600px;
+        width: 100%;
     }
     .app-store-badge {
         height: 60px;
@@ -446,7 +494,6 @@ section {
         }
     }
     .reviews {
-        justify-content: center;
         img {
             width: 100%;
             max-width: 280px;
@@ -458,6 +505,9 @@ section {
     background: $blue;
     h2 {
         color: $white;
+    }
+    .timeline-container {
+        
     }
     /* The actual timeline (the vertical ruler) */
     .timeline {
@@ -483,11 +533,11 @@ section {
     .event::after {
         content: '';
         position: absolute;
-        width: 24px;
-        height: 24px;
-        left: 7px;
+        width: 48px;
+        height: 48px;
+        left: -5px;
         background-color: white;
-        top: 28px;
+        top: 16px;
         border-radius: 50%;
         z-index: 1;
     }
@@ -506,24 +556,22 @@ section {
             left: 50%;
         }
         .event::after {
-            right: -16px;
+            right: -28px;
             left: initial;
         }
         .event:nth-of-type(2n)::after {
-            left: -8px;
+            left: -20px;
         }
     }
 }
 
 #team {
-    h2 {
-        color: $white;
-    }
     .members {
         .member {
             flex-direction: column;
             justify-content: flex-start;
             margin: 0;
+            align-items: center;
             .grid-cell {
                 padding: 5px 0;
                 max-width: 120px;
@@ -565,7 +613,8 @@ section {
 }
 
 #partners {
-    background: $bg1 url("../img/bg-main.jpg") no-repeat bottom center;
+    background: $bg1 url("../img/bg-main.jpg") center center no-repeat;
+    background-size: cover;
     h2 {
         color: $white;
     }
@@ -607,7 +656,7 @@ section {
     }
     .email {
         background: $alt-blue1;
-        color: $blue;
+        color: $white;
         width: 100%;
         text-align: center;
         line-height: 48px;

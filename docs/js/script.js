@@ -2,6 +2,7 @@ $( document ).ready(function() {
     // Open mobile menu
     $(".top-nav-icon").click(function(){
         $( "#topnav" ).toggleClass( "visible" );
+        $( ".main-header" ).toggleClass( "dark-bg" );
         $( "#openmenu" ).toggleClass( "hidden" );
         $( "#closemenu" ).toggleClass( "hidden" );
         // Hide dropdown when closing main menu

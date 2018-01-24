@@ -32,12 +32,12 @@ image: /img/index.png
 <section id="video">
     <div class="grid">
         <div class="grid-cell">
-            <h2>{{ text["Bitnation"] }}:<br>{{ text["Borderless, Decentralized, Voluntary"] }}</h2>
+            <h2 style="no-margin-bottom">{{ text["Bitnation is Governance 2.0"] }}:<br>{{ text["Borderless, Decentralized, Voluntary"] }}</h2>
         </div>
     </div>
     <div class="grid">
         <div class="grid-cell">
-            <p>{{ text["Governance technologies will have a greater long-term positive impact on the lives of billions of people than any of the other Web 3.0 solution currently being developed. Bitnation is the pioneer and most well established project in decentralised Gov.Tech."] }}</p>
+            <p class="bold">{{ text["Governance technologies will have a greater long-term positive impact on the lives of billions of people than any of the other Web 3.0 solution currently being developed. Bitnation is the pioneer and most well established project in decentralised Gov.Tech."] }}</p>
         </div>
     </div>
     <div class="grid">
@@ -59,7 +59,7 @@ image: /img/index.png
             <p class="more">{{ text["Bitnation is the organisation behind Pangea - the world's first Decentralized Borderless Voluntary Nation (DBVN). Bitnation began in July 2014 and has hosted the world’s first blockchain marriage, birth certificate, refugee emergency ID, World Citizenship, DBVN Constitution and more. Our proof-of-concept projects, including the blockchain ID and Public Notary, are used by tens of thousands of Bitnation Citizens and Embassies around the world."] }}</p>
             <p class="more">{{ text["Bitnation is the winner of UNESCO’s Netexplo Award 2017 for our Emergency Refugee ID system, and has been featured by the Wall Street Journal, Bloomberg, BBC, CNN, WIRED, VICE, TechCrunch, The Economist, Russia Today among many others."] }}</p>
         </div>
-        <div class="grid-cell cta show-more-container">
+        <div class="grid-cell show-more-container">
             <button class="show-more">{{ text["Read More"] }}</button>
         </div>
     </div>
@@ -152,10 +152,15 @@ image: /img/index.png
                 <p>{{ text["On Pangea you can create your own Decentralised Borderless Voluntary Nation (DBVN). Choose your Code of Law and Descision Making Mechanism, write a Constitution and provide Governance Services to Citizens."] }}</p>
             </div>
         </div>
-        <div class="grid">
+        <div class="grid even">
             <div class="grid-cell">
                 <div class="cta space">
-                    <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper 2017"] }}</a>
+                    <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper (42 pgs.)"] }}</a>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="cta space">
+                    <a href="{{ "/documents/" | absolute_url }}">{{ text["Litepaper (5 pgs.)"] }}</a>
                 </div>
             </div>
         </div>
@@ -242,6 +247,11 @@ image: /img/index.png
             <p>{{ text["More than a third of PAT is reserved to power the Pangea Jurisdiction. Citizens garner non-tradable reputation tokens based on successful contract execution. Arbitrators and contracts also accumulate non-tradable tokens. Citizens are rewarded with PAT for accumulating non-tradable reputation tokens when milestones are reached."] }}</p>
         </div>
     </div>
+    <div class="grid even">
+        <div class="grid-cell">
+            <h2>{{ text["Reviews of Bitnation"] }}</h2>
+        </div>
+    </div>
     <div class="grid reviews">
         <div class="grid-cell one-third">
             <a href="https://cryptohydra.com/ico-reports/pangea-arbitration-token-pat-ico/" target="_blank">
@@ -253,11 +263,6 @@ image: /img/index.png
                 <img src="{{ "/img/icoranker.png" | absolute_url }}" alt="ICO Ranker: 95% - Gold">
             </a>
         </div>
-        <div class="grid-cell one-third">
-            <a href="https://icobench.com/ico/bitnation" target="_blank">
-                <img src="{{ "/img/icobench.png" | absolute_url }}" alt="ICO Bench: 4.5/5 Stars">
-            </a>
-        </div>
     </div>
 </section>
 
@@ -267,7 +272,7 @@ image: /img/index.png
             <h2>{{ text["Bitnation History"] }}</h2>
         </div>
     </div>
-    <div class="grid">
+    <div class="grid timeline-container">
         <div class="grid-cell timeline">
             {% if site.rtl_languages contains site.active_lang %}<div class="event hidden"></div>{% endif %}{% for event in site.data.history-events %}
             <div class="event">
