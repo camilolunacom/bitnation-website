@@ -231,11 +231,11 @@ body::after { background: #020307 url("../img/bg-dark-map.jpg") no-repeat center
 
 h1, h2, h3, h4, h5, h6 { font-weight: 700; text-align: inherit; line-height: 1.2; }
 
-h1, h2 { font-family: "Source Code Pro", courier, monospace; color: #009bd6; }
+h1, h2 { font-family: "Source Code Pro", courier, monospace; color: #002768; }
 
 h1, h3 { text-transform: uppercase; }
 
-h2 { font-size: 1.9em; }
+h2 { font-size: 1.9em; color: #ffffff; }
 
 h3 { font-size: 1.3em; }
 
@@ -245,7 +245,9 @@ h5 { font-size: 1em; margin: 15px auto; }
 
 p, li { line-height: 2; margin: 15px auto; }
 
-a, button { text-decoration: none; color: #009bd6; }
+a, button { text-decoration: none; color: #002768; }
+
+p a { color: #ffffff; text-decoration: underline; }
 
 button { background: none; border: none; font-size: 1em; cursor: pointer; padding: 0; text-transform: inherit; font-weight: inherit; }
 
@@ -306,7 +308,7 @@ section { padding: 50px 0; }
 .show-more-container { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
 .show-more-container a, .show-more-container button, .show-more-container input[type=submit] { color: #ffffff; border: #ffffff 1px solid; border-radius: 2px; min-width: 260px; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
 
-.cta-hl a, .cta-hl button, .cta-hl input[type=submit] { background: #009bd6; color: #ffffff; }
+.cta-hl a, .cta-hl button, .cta-hl input[type=submit] { background: #002768; color: #ffffff; }
 
 .bold { font-weight: 700; }
 
@@ -320,6 +322,8 @@ section { padding: 50px 0; }
 .vid-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .light { font-weight: 300; }
+
+.announcement { font-size: 1.5em; font-weight: bold; }
 
 .main-header { width: 100%; position: absolute; top: 0; left: 0; width: 100%; min-height: 65px; padding: 10px 0; }
 .main-header .grid { justify-content: space-between; }
@@ -352,11 +356,11 @@ section { padding: 50px 0; }
 
 #install { background: #f1f1f1 url("../img/bg-light-map.jpg") center center no-repeat; background-size: cover; }
 #install h2 { color: #ffffff; }
-#install .pangea-screens { max-width: 600px; width: 100%; }
+#install .pangea-screens { max-width: 930px; width: 100%; }
 #install .app-store-badge { height: 60px; width: 180px; }
 #install .google-play-badge { height: 60px; }
 
-#pangea { background: #009bd6; }
+#pangea { background: #002768; }
 #pangea h2 { color: #ffffff; }
 #pangea .stats { justify-content: center; }
 @media screen and (min-width: 752px) { #pangea .stats { flex-wrap: nowrap; } }
@@ -368,7 +372,7 @@ section { padding: 50px 0; }
 @media screen and (min-width: 930px) { #pat .logo { width: 80%; } }
 #pat .reviews img { width: 100%; max-width: 280px; }
 
-#history { background: #009bd6; /* The actual timeline (the vertical ruler) */ }
+#history { background: #002768; /* The actual timeline (the vertical ruler) */ }
 #history h2 { color: #ffffff; }
 #history .timeline { position: relative; width: 100%; }
 #history .timeline::after { background: url("../img/chain.svg") repeat-y; content: ''; position: absolute; width: 8px; top: 0; bottom: 0; left: 30px; }
@@ -391,7 +395,8 @@ section { padding: 50px 0; }
 @media screen and (min-width: 639px) { #team #advisors { justify-content: center; } }
 #team #advisors .member { min-width: 25%; }
 
-#partners { background: #020307 url("../img/bg-main.jpg") center center no-repeat; background-size: cover; }
+.map-bg { background: #020307 url("../img/bg-main.jpg") center center no-repeat; background-size: cover; }
+
 #partners h2 { color: #ffffff; }
 #partners .partner-logos { align-items: center; flex-direction: column; }
 @media screen and (min-width: 600px) { #partners .partner-logos { flex-direction: row; } }
@@ -399,13 +404,14 @@ section { padding: 50px 0; }
 #partners #abdk, #partners #ldj-capital { max-height: 70px; }
 #partners #bitcoin-suisse, #partners #network-society-ventures { max-height: 60px; }
 
+#social .social-icons svg { color: #ffffff; }
 @media screen and (min-width: 520px) and (max-width: 752px) { #social .social-icons { justify-content: center; } }
 
 .email-form { justify-content: center; }
 .email-form .grid-cell { width: 100%; }
-.email-form .email { background: #012c56; color: #ffffff; width: 100%; text-align: center; line-height: 48px; }
+.email-form .email { background: #002768; color: #ffffff; width: 100%; text-align: center; line-height: 48px; }
 
-.main-footer { background: #009bd6; font-size: 0.8em; padding: 15px 0; }
+.main-footer { background: #002768; font-size: 0.8em; padding: 15px 0; }
 .main-footer a { color: #ffffff; font-weight: 700; }
 @media screen and (min-width: 600px) { .main-footer .grid { justify-content: space-between; } }
 .main-footer .grid-cell { align-self: center; }
