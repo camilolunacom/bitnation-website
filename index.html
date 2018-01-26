@@ -277,10 +277,13 @@ image: /img/index.png
             <h2>{{ text["Bitnation History"] }}</h2>
         </div>
     </div>
-    <div class="grid timeline-container">
+    <div class="grid full timeline-container">
         <div class="grid-cell timeline">
             {% if site.rtl_languages contains site.active_lang %}<div class="event hidden"></div>{% endif %}{% for event in site.data.history-events %}
             <div class="event">
+                <div class="icon icon-s">
+                    <i class="{{ event.icon }}"></i>
+                </div>
                 <div class="title">
                     <h5>{{ event.date }}: {{ event.title }}</h>
                 </div>

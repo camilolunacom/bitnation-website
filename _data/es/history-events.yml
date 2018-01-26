@@ -1,27 +1,34 @@
 - date: Julio 14 de 2014
   title: Bitnation es fundada
   description: ¡Primer matrimonio Blockchain del mundo, identificación de ciudadanía mundial y otros pilotos!
+  icon: ethereum
 
 - date: Q2 2015
   title: Primera iteración de Pangea
   description: Usando la cadena Horizon. Títulos de tierra y certificado de nacimiento de pilotos realizados en Blockchain.
+  icon: ethereum
 
 - date: Q3 2015
   title: Respuesta de emergencia de refugiados
   description: Blockchain ID, funciones ciudadanas y de embajada.
+  icon: fab fa-ethereum
 
 - date: Q4 2015
   title: Notaría pública
   description: Creada en cooperación con el programa de residencia electrónica de Estonia.
+  icon: ethereum
 
 - date: Q1/Q4 2016
   title: DBVN y Pangea v. 02
   description: Lanzamiento de DBVN en Ethereum, centro de recursos de DBVN, y Pangea v. 02 en SSB.
+  icon: ethereum
 
 - date: Q1/Q2 2017
   title: IPFS, PAT y NETEXPLO
   description: Nuevo Backend de Pangea Centrado en IPFS, diseño de Token PAT y Premio UNESCO NETEXPLO.
+  icon: ethereum
 
 - date: Q3/Q4 2017
   title: Nueva Interfaz de Pangea, Lucy Bot, Oracle y TSE
   description: ¡Estamos aquí!
+  icon: ethereum

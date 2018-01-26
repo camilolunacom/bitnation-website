@@ -6,7 +6,8 @@ $bg4:           #030053;
 $bg5:           #000022;
 $light-black:   rgba(0, 0, 0, 0.9);
 $dark-blue:     #002878;
-$blue:          #002768;
+$blue:          #02afd9;
+$buttons:       #002768;
 $grey:          #f1f1f1;
 $alt-blue1:     #012c56;
 $alt-blue2:     #3e6181;
@@ -212,7 +213,7 @@ section {
 }
 
 .grid.full {
-    width: 100%;
+    max-width: 100%;
 }
 
 .grid .grid-cell {
@@ -263,7 +264,7 @@ section {
     width: 100%;
     a, button, input[type=submit] {
         background: $white;
-        color: $dark-blue;
+        color: $buttons;
         border-radius: 2px;
         min-width: 260px;
         min-height: 48px;
@@ -307,6 +308,14 @@ section {
     margin-bottom: 15px;
 }
 
+.icon-s {
+    font-size: 1.5em;
+}
+
+.icon-m {
+    font-size: 2em;
+}
+
 .icon-l {
     font-size: 3.5em;
 }
@@ -342,12 +351,14 @@ section {
 
 .main-header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 65px;
-    padding: 10px 0;
+    padding: 20px 0;
+    z-index: 100;
+    transition: all 0.2s linear;
     .grid {
         justify-content: space-between
     }
@@ -427,6 +438,11 @@ section {
     }
 }
 
+.header-fixed {
+    background-color: $blue;
+    padding: 5px 0;
+}
+
 #intro {
     background: $bg1 url("../img/bg-main.jpg") center center no-repeat;
     background-size: cover;
@@ -460,8 +476,7 @@ section {
         color: $white;
     }
     .pangea-screens {
-        max-width: 930px;
-        width: 100%;
+        width: 930px;
     }
     .app-store-badge {
         height: 60px;
@@ -523,6 +538,7 @@ section {
     }
     /* The actual timeline (the vertical ruler) */
     .timeline {
+        max-width: 930px;
         position: relative;
         width: 100%;
     }
@@ -539,17 +555,19 @@ section {
         text-align: left;
         position: relative;
         width: 100%;
-        padding: 15px;
-        padding-left: 70px;
+        padding: 5px 15px 5px 70px;
     }
-    .event::after {
-        content: '';
+    .event .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue;
         position: absolute;
         width: 48px;
         height: 48px;
         left: -5px;
         background-color: white;
-        top: 16px;
+        top: 8px;
         border-radius: 50%;
         z-index: 1;
     }
@@ -559,7 +577,7 @@ section {
         }
         .event {
             width: 50%;
-            padding: 15px 40px;
+            padding: 0 40px;
         }
         .event:nth-of-type(2n+1) {
             text-align: right;
@@ -567,11 +585,12 @@ section {
         .event:nth-of-type(2n) {
             left: 50%;
         }
-        .event::after {
+        .event .icon {
             right: -28px;
             left: initial;
+            top: -15px;
         }
-        .event:nth-of-type(2n)::after {
+        .event:nth-of-type(2n) .icon {
             left: -20px;
         }
     }
@@ -673,7 +692,7 @@ section {
         width: 100%;
     }
     .email {
-        background: $blue;
+        background: $buttons;
         color: $white;
         width: 100%;
         text-align: center;

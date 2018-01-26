@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+    // Add class to header on scroll
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop < 100){
+            $(".main-header").removeClass("header-fixed");
+        }else{
+            $(".main-header").addClass("header-fixed");
+        }
+      });
     // Open mobile menu
     $(".top-nav-icon").click(function(){
         $( "#topnav" ).toggleClass( "visible" );
