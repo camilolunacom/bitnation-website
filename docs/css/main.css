@@ -352,7 +352,7 @@ section { padding: 50px 0; }
 .header-fixed { background-color: #02afd9; padding: 0; }
 .header-fixed .dropdown-content { background-color: #02afd9; }
 
-#intro { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #020307 url("../img/bg-main.jpg") left center no-repeat; background-size: cover; }
+#intro { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #020307 url("../img/bg-main.jpg") right center no-repeat; background-size: cover; }
 #intro .logo-pangea { height: 180px; margin-top: 50px; }
 #intro h1 { color: #ffffff; }
 @media screen and (min-width: 930px) { #intro { min-height: 750px; }
@@ -402,7 +402,7 @@ section { padding: 50px 0; }
 @media screen and (min-width: 639px) { #team #advisors { justify-content: center; } }
 #team #advisors .member { min-width: 25%; }
 
-.map-bg { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #020307 url("../img/bg-main.jpg") right center no-repeat; background-size: cover; }
+.map-bg { background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #020307 url("../img/bg-main.jpg") left center no-repeat; background-size: cover; }
 
 #partners h2 { color: #ffffff; }
 #partners .partner-logos { align-items: center; flex-direction: column; }
