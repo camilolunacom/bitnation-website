@@ -440,7 +440,10 @@ section {
 
 .header-fixed {
     background-color: $blue;
-    padding: 5px 0;
+    padding: 0;
+    .dropdown-content {
+        background-color: #02afd9;
+    }
 }
 
 #intro {
