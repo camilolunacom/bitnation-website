@@ -649,6 +649,10 @@ section {
 .map-bg {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), $bg1 url("../img/bg-main.jpg") left center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    @media screen and (min-width: 930px) {
+        background-attachment: initial;
+    }
 }
 
 #partners {
