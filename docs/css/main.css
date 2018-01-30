@@ -228,6 +228,8 @@ section { padding: 50px 0; }
 .btn-3 { justify-content: center; }
 @media screen and (min-width: 930px) { .btn-3 { justify-content: space-around; } }
 
+.blocker { z-index: 200; }
+
 .visible { display: block !important; }
 
 .hidden { display: none !important; }
@@ -244,6 +246,8 @@ section { padding: 50px 0; }
 
 .cta, .cta-hl { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
 .cta a, .cta-hl a, .cta button, .cta-hl button, .cta input[type=submit], .cta-hl input[type=submit] { background: #ffffff; color: #002768; border-radius: 2px; min-width: 260px; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
+
+.blocker input[type="submit"] { min-width: initial; max-width: 100%; }
 
 .show-more-container { text-transform: uppercase; font-weight: bold; display: inline-block; width: 100%; }
 .show-more-container a, .show-more-container button, .show-more-container input[type=submit] { color: #ffffff; border: #ffffff 1px solid; border-radius: 2px; min-width: 260px; min-height: 48px; padding: 12px 30px; margin: auto; display: block; }
@@ -355,7 +359,7 @@ section { padding: 50px 0; }
 #social .social-icons svg { color: #ffffff; }
 @media screen and (min-width: 520px) and (max-width: 752px) { #social .social-icons { justify-content: center; } }
 
-.email-form { justify-content: center; }
+.email-form { justify-content: center; padding: 0; }
 .email-form .grid-cell { width: 100%; }
 .email-form .email { background: #002768; color: #ffffff; width: 100%; text-align: center; line-height: 48px; }
 

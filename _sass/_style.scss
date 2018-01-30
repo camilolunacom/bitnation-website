@@ -227,6 +227,10 @@ section {
     }
 }
 
+.blocker {
+    z-index: 200;
+}
+
 // General
 
 .visible {
@@ -272,6 +276,11 @@ section {
         margin: auto;
         display: block;
     }
+}
+
+.blocker input[type="submit"] {
+    min-width: initial;
+    max-width: 100%;
 }
 
 .show-more-container {
@@ -695,6 +704,7 @@ section {
 
 .email-form {
     justify-content: center;
+    padding: 0;
     .grid-cell {
         width: 100%;
     }
