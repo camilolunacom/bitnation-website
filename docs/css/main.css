@@ -217,7 +217,8 @@ section { padding: 50px 0; }
   .grid .two-thirds { width: 66.6667% !important; }
   .grid .half { width: 50% !important; }
   .grid .one-third { width: 33.3333% !important; }
-  .grid .one-quarter { width: 25% !important; } }
+  .grid .one-quarter { width: 25% !important; }
+  .grid .auto-width { width: auto !important; } }
 
 .grid.even { justify-content: space-evenly; }
 
