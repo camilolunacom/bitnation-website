@@ -248,6 +248,14 @@ section {
     max-width: 100%;
 }
 
+.grid.flex-end {
+    justify-content: flex-end;
+}
+
+.grid.flex-center {
+    justify-content: center;
+}
+
 .grid.no-flex {
     max-width: 930px;
     margin: 0 auto;
@@ -294,6 +302,10 @@ section {
 
 .section-padding-top {
     padding-top: 50px;
+}
+
+.drop-shadow {
+    box-shadow: 8.15px 8.15px 17.46px rgba(0, 0, 0, 0.2)
 }
 
 .yellow-box {
@@ -382,6 +394,7 @@ section {
     width: 100%;
     text-align: center;
     a, button, input[type=submit] {
+        box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12);
         background: $white;
         color: $orange;
         border-radius: 2px;
@@ -390,6 +403,14 @@ section {
         padding: 12px 30px;
         margin: auto;
         display: block;
+    }
+}
+
+.cta-hl {
+    @extend .cta;
+    a, button, input[type=submit] {
+        background: $orange;
+        color: $white;
     }
 }
 
@@ -412,14 +433,6 @@ section {
         padding: 12px 30px;
         margin: auto;
         display: block;
-    }
-}
-
-.cta-hl {
-    @extend .cta;
-    a, button, input[type=submit] {
-        background: $orange;
-        color: $white;
     }
 }
 
@@ -586,14 +599,6 @@ section {
     }
 }
 
-#video {
-
-}
-
-#pangea {
-
-}
-
 #install {
     background-color: $grey1;
     background-size: cover;
@@ -708,6 +713,28 @@ section {
     }
 }
 
+.mention {
+    border-bottom: 1px solid $grey1;
+    a {
+        color: $dark-text;
+    }
+    .date, .source {
+        text-transform: uppercase;
+    }
+}
+.see-all {
+    text-align: right;
+    text-transform: uppercase;
+    color: $orange;
+    font-weight: bold;
+    .arrow {
+        vertical-align: baseline;
+        fill: #FF8B00;
+        width: 50px;
+        padding: 0 10px;
+    }
+}
+
 #partners {
     h2 {
         color: $white;
@@ -717,7 +744,7 @@ section {
     }
     .logo-partner img {
         max-height: 60px;
-        margin: 15px;
+        max-width: 100%;
     }
     #abdk {
         max-height: 70px;
@@ -832,6 +859,7 @@ section {
 #documents {
     .grid {
         justify-content: center;
+        text-align: center;
     }
     .document {
         margin-bottom: 30px;
