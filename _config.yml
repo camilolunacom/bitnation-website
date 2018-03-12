@@ -2,7 +2,7 @@ title: Bitnation Pangea
 description: Your Blockchain Jurisdiction
 author: Bitnation
 
-url: https://camilolunacom.github.io
+url: http://bitnation.camiloluna.com
 
 twitter:
   username: MyBitnation 
@@ -30,8 +30,10 @@ plugins:
 permalink: /:title/
 
 sass:
-  # style: compressed
+  style: compressed
   sourcemap: true
+
+destination: docs
 
 exclude:
   - .gitignore

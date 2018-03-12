@@ -1,10 +1,5 @@
 {% assign text = site.data.content %}
 <div class="grid">
-    <div class="grid-cell">
-        <a class="footer-logo" href="{% if site.active_lang == site.default_lang %} {{ site.url | absolute_url }}{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/ {% else %}{{ site.url }}{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/{{ site.active_lang }}/{% endif %}">
-            <img src="{{ "/img/bitnation-logo-h.svg" | relative_url }}">
-        </a>
-    </div>
     <div class="grid-cell footer-text">
         <nav class="footer-menu">
             <a href="mailto:info@bitnation.co" alt="info@bitnation.co">info@bitnation.co</a>

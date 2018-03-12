@@ -1,1 +1,1 @@
-Sitemap: https://camilolunacom.github.io/bitnation-website/sitemap.xml
+Sitemap: http://bitnation.camiloluna.com/sitemap.xml

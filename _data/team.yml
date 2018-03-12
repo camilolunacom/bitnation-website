@@ -1,55 +1,36 @@
-core:
+operations:
 
 - name: Susanne Tarkowski Tempelhof
-  role: CEO
+  role: Founder & CEO
   social:
     linkedin: susannetarkowski
     github: xsttx
 
 - name: James Fennell Tempelhof
-  role: COO
+  role: Chief Operations Officer
   social:
     linkedin: james-fennell
 
 - name: Dr. John Matthews
-  role: CFO
+  role: Cheif Financial Officer
   social:
     linkedin: johnmathews1
 
-- name: Erik Vollstädt
-  role: Lead Ambassador
-  social:
-    linkedin: erikvollstaedt
-
-- name: Florian Lenz
-  role: Backend Developer
-  social:
-    github: florianlenz
-
-- name: Kent Dahlgren
-  role: AI Developer
-  social:
-    linkedin: kent-dahlgren-gsec-742a073
-    twitter: kent_dahlgren
-
-- name: Mawo
-  role: Infrastructure & Security
-
-- name: Johan Nygren
-  role: Resident Genius
-  social:
-    linkedin: resilience_me
-
 - name: Sonja Prstec
-  role: Legal Advisor
+  role: Chief Legal Officer
   social:
     linkedin: sonja-prstec-89a0b324
 
 - name: Kenneth Lillieholm
-  role: Documentation
+  role: Diplomatic Engagement
+
+- name: Erik Vollstädt
+  role: Community Director
+  social:
+    linkedin: erikvollstaedt
 
 - name: Joffy Mills
-  role: Marketing & Communications
+  role: Media Director
 
 - name: Alma Sommer
   role: Social Media
@@ -57,29 +38,27 @@ core:
     linkedin: rayneberry
     twitter: EarthPermit
 
-- name: Björn Paulsson
-  role: Project Coordinator
-  social:
-    linkedin: bjornpaulsson
+- name: Jacob Cox
+  role: Community Engagement
 
-- name: David Gross
-  role: UX/UI, Project Manager
-  social:
-    linkedin: davidigross
-    github: mimetic
-    twitter: mimetic
+- name: Rachelle Traboulsi
+  role: Executive Assistant
 
-- name: Adrian Pollio
-  role: Graphic Designer
-  social:
-    linkedin: adrianpollio
-    twitter: adrianpollio
+- name: Abhimanyu Dayal
+  role: DApp Fund Manager
 
-- name: Alberto Estarrona
-  role: Senior iOS / Android Developer
+technology:
+
+- name: Kent Dahlgren
+  role: Chief Technology Officer
   social:
-    linkedin: alberto-r-estarrona
-    twitter: estarrona
+    linkedin: kent-dahlgren-gsec-742a073
+    twitter: kent_dahlgren
+
+- name: Florian Lenz
+  role: Chief Software Architect
+  social:
+    github: florianlenz
 
 - name: William Huang
   role: Solidity Developer
@@ -87,10 +66,41 @@ core:
     linkedin: william-h-902213139
     github: william2958
 
+- name: Alberto Estarrona
+  role: Snr iOS / Android Developer
+  social:
+    linkedin: alberto-r-estarrona
+    twitter: estarrona
+
 - name: Andrew Selivanov
-  role: Mobile Developer
+  role: iOS / Android Developer
   social:
     github: seland
+
+- name: David Gross
+  role: UX/UI Developer
+  social:
+    linkedin: davidigross
+    github: mimetic
+    twitter: mimetic
+
+- name: Mark Nuzz
+  role: Systems Architect
+
+- name: Thiago Souza
+  role: AI Developer
+
+- name: Mark Wong
+  role: Snr React Native Dev
+
+- name: Daniel França
+  role: Fullstack JS Dev
+
+- name: Adrian Pollio
+  role: Creative Director
+  social:
+    linkedin: adrianpollio
+    twitter: adrianpollio
 
 - name: Camilo Luna
   role: Web Developer
@@ -98,6 +108,17 @@ core:
     linkedin: camiloluna
     github: camilolunacom
     twitter: camilolunacom
+
+- name: Johan Nygren
+  role: Proof-of-Individuality, Swarm distribution
+  social:
+    linkedin: resilience_me
+
+- name: Spencer Ferri
+  role: Machine Learning, Exocortex
+
+- name: Mawo
+  role: Chief Security Officer
 
 advisors:
 
