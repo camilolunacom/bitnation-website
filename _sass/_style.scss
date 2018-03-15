@@ -199,6 +199,15 @@ section {
     padding: 50px 0;
 }
 
+.w-next {
+    padding-bottom: 20%;
+    margin-bottom: -20%;
+    @media screen and (min-width: 930px) {
+        padding-bottom: 10%;
+        margin-bottom: -10%;
+    }
+}
+
 .grid {
     max-width: 930px;
     margin: 0 auto;
@@ -298,6 +307,9 @@ section {
 .map-bg-top {
     background-size: 100%;
     background-position-y: 80px;
+    @media screen and (min-width: 930px) {
+        background-size: 930px;
+    }
 }
 
 .section-padding-top {
@@ -312,21 +324,19 @@ section {
     background-color: $yellow;
     width: 95%;
     margin: auto;
+    padding-bottom: 15px;
+    max-width: 980px;
 }
 
 .white-box {
     background-color: $white;
     width: 95%;
-    margin: auto;
+    margin: 15px auto;
+    max-width: 980px;
 }
 
 .grey2-box {
     background-color: $grey2;
-}
-
-.w-next {
-    margin-bottom: -28%;
-    padding-bottom: 28%;
 }
 
 // General
@@ -603,7 +613,7 @@ section {
     background-color: $grey1;
     background-size: cover;
     .pangea-screens {
-        width: 930px;
+        max-width: 100%;
     }
     .app-store-badge {
         height: 60px;
@@ -684,10 +694,10 @@ section {
             align-items: center;
             .grid-cell {
                 padding: 5px 0;
-                max-width: 120px;
+                width: 120px;
             }
             .photo img {
-                max-width: 120px;
+                width: 120px;
                 border-radius: 50%;
             }
             .name {
@@ -707,6 +717,11 @@ section {
                         color: $white;
                         font-size: 24px;
                     }
+                }
+            }
+            @media screen and (min-width: 930px) {
+                .grid-cell {
+                    width: 148px;
                 }
             }
         }
@@ -740,22 +755,22 @@ section {
         color: $white;
     }
     .partner-logos {
-        align-items: flex-start;
+        align-items: center;
     }
     .logo-partner img {
         max-height: 60px;
         max-width: 100%;
     }
-    #abdk {
-        max-height: 70px;
+    #amazix {
+        max-height: 50px;
     }
-    #e-residency {
+    #republic-of-estonia-e-residency {
         max-height: 80px;
     }
     #liberaland {
         max-height: 50px;
     }
-    #abdk, #ldj-capital {
+    #abdk-consulting, #ldj-capital {
         max-height: 70px;
     }
 }
