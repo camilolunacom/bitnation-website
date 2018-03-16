@@ -38,6 +38,7 @@ sass:
 destination: docs
 
 exclude:
+  - _site
   - .gitignore
   - readme.md
   - Gemfile

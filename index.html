@@ -78,13 +78,22 @@ image: /img/index.png
             <h2>{{ text["Bitnation is here"] }}<br>{{ text["Download the Pangea App"] }}</h2>
         </div>
     </div>
-    <div class="grid">
-        <div class="grid-cell">
-            <img class="pangea-screens" src="{{ "/img/pangea-devices.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
+    <div class="pangea-screens">
+        <div class="pangea-screen">
+            <img src="{{ "/img/pangea-screens-01.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
+        </div>
+        <div class="pangea-screen">
+            <img src="{{ "/img/pangea-screens-02.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
+        </div>
+        <div class="pangea-screen">
+            <img src="{{ "/img/pangea-screens-03.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
+        </div>
+        <div class="pangea-screen">
+            <img src="{{ "/img/pangea-screens-04.png"| absolute_url }}" alt="Pangea Mockup Screenshots">
         </div>
     </div>
-    <div class="grid flex-center">
-        <div class="grid-cell">
+    <div class="grid flex-center padding-top-30">
+        <!-- <div class="grid-cell">
             <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile"><svg class="app-store-badge" id="livetype" xmlns="http://www.w3.org/2000/svg" width="119.66407" height="40" viewBox="0 0 119.66407 40">
                 <title>Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917</title>
                 <g>
@@ -132,9 +141,9 @@ image: /img/index.png
                 </g>
               </svg>
               </a>
-        </div>
+        </div> -->
         <div class="grid-cell">
-            <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile"><img class="google-play-badge" src="{{ "/img/google-play-badge.png" | absolute_url }}"></a>
+            <a href="https://play.google.com/store/apps/details?id=co.bitnation"><img class="google-play-badge" src="{{ "/img/google-play-badge.png" | absolute_url }}"></a>
         </div>
     </div>
 </section>
@@ -209,7 +218,7 @@ image: /img/index.png
     </div>
 </section>
 
-<section id="history">
+<section id="history" class="no-padding-top">
     <div class="grid">
         <div class="grid-cell">
             <h2>{{ text["Bitnation Timeline"] }}</h2>
@@ -256,8 +265,8 @@ image: /img/index.png
             <div class="descriptor">{{ text["Legal services market"] }}</div>
         </div>
     </div>
-    <div class="box">
-        <div class="grid">
+    <div class="box padding-bottom-15">
+        <div class="grid flex-between">
             <div class="grid column grid-cell no-padding">
                 <div class="grid-cell">
                     <h2 class="t-light caps">{{ text["Token Distribution"] }}</h2>
@@ -365,7 +374,7 @@ image: /img/index.png
     <div class="grid exchanges-logos">
         {% assign all-exchanges = site.data.exchanges | sort: 'name' %}
         {% for exchange in all-exchanges %}{% assign id = exchange.name | slugify %}{% assign img-url = exchange.name | slugify: 'ascii' | prepend: "/img/logo-" | append: ".png" %}<div class="grid-cell">
-            <img id="{{ id }}" src="{{ img-url | absolute_url }}" alt="{{ exchange.name }}">
+            <img id="{{ id }}" class="logo-exchange" src="{{ img-url | absolute_url }}" alt="{{ exchange.name }}">
         </div>
         {% endfor %}
     </div>
@@ -431,7 +440,7 @@ image: /img/index.png
 </section>
 
 
-<section id="partners">
+<section id="partners" class="no-padding-top">
     <div class="grid">
         <div class="grid-cell">
             <h2>{{ text["Our Partners"] }}</h2>
@@ -440,7 +449,7 @@ image: /img/index.png
     <div class="grid partner-logos">
         {% assign all-partners = site.data.partners | sort: 'name' %}
         {% for partner in all-partners %}{% assign id = partner.name | slugify %}{% assign img-url = partner.name | slugify: 'ascii' | prepend: "/img/logo-" | append: ".png" %}        <div class="grid-cell">
-            <a class="logo-partner" href="{{ img-url }}" target="_blank">
+            <a class="logo-partner" href="{{ partner.url }}" target="_blank">
                 <img id="{{ id }}" src="{{ img-url | absolute_url }}" alt="{{ partner.name }}">
             </a>
         </div>
@@ -455,7 +464,7 @@ image: /img/index.png
         </div>
     </div>
     <div class="grid news">
-            {% assign news-items = site.data.media | sort: 'date' | reverse %}{% for mention in news-items limit: 3 %}<div class="grid-cell mention">
+            {% assign news-items = site.data.media | sort: 'date' | reverse %}{% for mention in news-items limit: 3 %}<div class="grid-cell whole mention">
             <a href="{{ mention.link }}"><span class="date">{{ mention.date | date: "%b %-d, %Y" }}</span> :: <span class="source">{{ mention.source }}</span> - <span class="title">{{ mention.title }}</span></a>
         </div>
         {% endfor %}
