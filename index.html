@@ -58,15 +58,20 @@ image: /img/index.png
             <p>{{ text["On Pangea you can create your own Decentralised Borderless Voluntary Nation (DBVN). Choose your Code of Law and Decision Making Mechanism, write a Constitution and provide Governance Services to Citizens."] }}</p>
         </div>
     </div>
-    <div class="grid even">
+    <div class="grid">
         <div class="grid-cell">
             <div class="cta">
-                <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper (42 pgs.)"] }}</a>
+                <a href="{{ site.data.docs[0].url }}" target="_blank">{{ text["Whitepaper (42 pgs.)"] }}</a>
             </div>
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="{{ "/documents/" | absolute_url }}">{{ text["Litepaper (5 pgs.)"] }}</a>
+                <a href="{{ site.data.docs[1].url }}" target="_blank">{{ text["Litepaper (5 pgs.)"] }}</a>
+            </div>
+        </div>
+        <div class="grid-cell">
+            <div class="cta">
+                <a href="{{ "/documents/" | absolute_url }}">{{ text["Translations"] }}</a>
             </div>
         </div>
     </div>
@@ -181,12 +186,12 @@ image: /img/index.png
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="{{ "/documents/" | absolute_url }}">{{ text["Whitepaper"] }}</a>
+                <a href="{{ site.data.docs[0].url }}">{{ text["Whitepaper"] }}</a>
             </div>
         </div>
         <div class="grid-cell">
             <div class="cta">
-                <a href="{{ "/documents/" | absolute_url }}">{{ text["Overview"] }}</a>
+                <a href="{{ site.data.docs[1].url }}">{{ text["Overview"] }}</a>
             </div>
         </div>
     </div>
