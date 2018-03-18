@@ -814,15 +814,7 @@ section {
     }
 }
 
-.mention {
-    border-bottom: 1px solid $grey1;
-    a {
-        color: $dark-text;
-    }
-    .date, .source {
-        text-transform: uppercase;
-    }
-}
+
 .see-all {
     text-align: right;
     text-transform: uppercase;
@@ -861,6 +853,20 @@ section {
     }
     #abdk-consulting, #ldj-capital {
         max-height: 70px;
+    }
+}
+
+#media {
+    .news {
+        align-items: center;
+    }
+    .mention {
+        width: 220px;
+        text-align: center;
+        img {
+            width: 80%;
+            margin: auto;
+        }
     }
 }
 

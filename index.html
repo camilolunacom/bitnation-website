@@ -98,7 +98,7 @@ image: /img/index.png
         </div>
     </div>
     <div class="grid flex-center padding-top-30">
-        <!-- <div class="grid-cell">
+        <div class="grid-cell">
             <a href="https://github.com/Bit-Nation/BITNATION-Pangea-mobile"><svg class="app-store-badge" id="livetype" xmlns="http://www.w3.org/2000/svg" width="119.66407" height="40" viewBox="0 0 119.66407 40">
                 <title>Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917</title>
                 <g>
@@ -146,7 +146,7 @@ image: /img/index.png
                 </g>
               </svg>
               </a>
-        </div> -->
+        </div>
         <div class="grid-cell">
             <a href="https://play.google.com/store/apps/details?id=co.bitnation"><img class="google-play-badge" src="{{ "/img/google-play-badge.png" | absolute_url }}"></a>
         </div>
@@ -193,32 +193,6 @@ image: /img/index.png
             <div class="cta">
                 <a href="{{ site.data.docs[1].url }}">{{ text["Overview"] }}</a>
             </div>
-        </div>
-    </div>
-    <div class="grid pat-chars">
-        <div class="grid-cell one-third">
-            <div class="icon-xl t-yellow margin-top-30 fa-layers fa-fw">
-                <i class="fas fa-circle"></i>
-                <i class="fa-inverse fal fa-shield-alt" data-fa-transform="shrink-6"></i>
-            </div>
-            <h3>{{ text["Secure & Transparent"] }}</h3>
-            <p>{{ text["PAT is an ERC20 (Ethereum based) industry-standard token, easily integrated with wallets and exchanges. PAT code, the DBVN Multisignature code, and the Bitnation TSE Contract code has all been designed and audited by leading Solidity experts. All contracts are open source and can be found on our GitHub. Funds are secured by Bitcoin Suisse AG in a multisignature wallet."] }}</p>
-        </div>
-        <div class="grid-cell one-third">
-            <div class="icon-xl t-yellow margin-top-30 fa-layers fa-fw">
-                <i class="fas fa-circle"></i>
-                <i class="fa-inverse fal fa-chart-bar" data-fa-transform="shrink-6"></i>
-            </div>
-            <h3>{{ text["Hard Capped"] }}</h3>
-            <p>{{ text["The PAT TSE will raise funds for Pangea development and to power Bitnation’s ecosystem. 34% of PAT will be sold during the TSE, including a pre-sale. To ensure the token is not diluted, the TSE is hard capped at US $30 million. This is designed to increase PAT token value as Pangea evolves and gains market adoption."] }}</p>
-        </div>
-        <div class="grid-cell one-third">
-            <div class="icon-xl t-yellow margin-top-30 fa-layers fa-fw">
-                <i class="fas fa-circle"></i>
-                <i class="fa-inverse fal fa-object-ungroup" data-fa-transform="shrink-6"></i>
-            </div>
-            <h3>{{ text["Powers Pangea"] }}</h3>
-            <p>{{ text["More than a third of PAT is reserved to power the Pangea Jurisdiction. Citizens garner non-tradable reputation tokens based on successful contract execution. Arbitrators and contracts also accumulate non-tradable tokens. Citizens are rewarded with PAT for accumulating non-tradable reputation tokens when milestones are reached."] }}</p>
         </div>
     </div>
 </section>
@@ -453,7 +427,7 @@ image: /img/index.png
     </div>
     <div class="grid partner-logos">
         {% assign all-partners = site.data.partners | sort: 'name' %}
-        {% for partner in all-partners %}{% assign id = partner.name | slugify %}{% assign img-url = partner.name | slugify: 'ascii' | prepend: "/img/logo-" | append: ".png" %}        <div class="grid-cell">
+        {% for partner in all-partners %}{% assign id = partner.name | slugify %}{% assign img-url = partner.name | slugify: 'ascii' | prepend: "/img/logo-" | append: ".png" %}<div class="grid-cell">
             <a class="logo-partner" href="{{ partner.url }}" target="_blank">
                 <img id="{{ id }}" src="{{ img-url | absolute_url }}" alt="{{ partner.name }}">
             </a>
@@ -469,14 +443,10 @@ image: /img/index.png
         </div>
     </div>
     <div class="grid news">
-            {% assign news-items = site.data.media | sort: 'date' | reverse %}{% for mention in news-items limit: 3 %}<div class="grid-cell whole mention">
-            <a href="{{ mention.link }}"><span class="date">{{ mention.date | date: "%b %-d, %Y" }}</span> :: <span class="source">{{ mention.source }}</span> - <span class="title">{{ mention.title }}</span></a>
+        {% assign mentions = site.data.media %}{% for mention in mentions %}{% assign img-id = mention.source | slugify %}{% assign img = mention.source | slugify: 'ascii' | prepend: "/img/logo-media-" | append: ".png" %}<div class="grid-cell mention">
+            <a href="{{ mention.url }}" target="_blank"><img id="{{ img-id }}" src="{{ img | relative_url }}" alt="{{ mention.source }}"></a>
         </div>
         {% endfor %}
-    </div>
-    <div class="grid flex-end">
-        <div class="grid-cell see-all"><a href="{{ "/media/" | absolute_url }}">{{ text["See all"] }}<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.43 27.43"><path d="M63.14,14.67a1.19,1.19,0,0,0,.08-.16,1,1,0,0,0,.08-.14l.06-.21a.35.35,0,0,0,0-.11,1.52,1.52,0,0,0,0-.67.35.35,0,0,0,0-.11c0-.07,0-.15-.06-.21a1,1,0,0,0-.08-.14,1.19,1.19,0,0,0-.08-.16,2,2,0,0,0-.19-.22s0,0,0,0l-12-12A1.72,1.72,0,0,0,48.5,2.93L57.57,12H1.71a1.72,1.72,0,0,0,0,3.43H57.57L48.5,24.5a1.72,1.72,0,0,0,0,2.43,1.73,1.73,0,0,0,2.43,0l12-12s0,0,0,0A2,2,0,0,0,63.14,14.67Z"/></svg></a>
-        </div>
     </div>
 </section>
 
